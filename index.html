@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muhammad Mueen | Fiber Optic & ELV Specialist</title>
+<title>Muhammad Mueen | IT Technician & Fiber Optic Specialist</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,6 +19,20 @@ body { font-family: 'Inter', sans-serif; }
 .timeline-dot { box-shadow: 0 0 0 4px rgba(6,182,212,0.3); }
 @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
 .float { animation: float 6s ease-in-out infinite; }
+.hero-photo-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('profile_photo.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  filter: blur(2px);
+}
+.hero-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(2,6,23,0.92) 0%, rgba(15,23,42,0.85) 50%, rgba(2,6,23,0.92) 100%);
+}
 </style>
 <script>
 tailwind.config = {
@@ -62,9 +76,10 @@ tailwind.config = {
 </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- Hero Section with Background Photo -->
 <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-16">
-<div class="absolute inset-0 bg-gradient-to-br from-darker via-dark to-darker"></div>
+<div class="hero-photo-bg"></div>
+<div class="hero-photo-overlay"></div>
 <div class="absolute top-20 right-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl float"></div>
 <div class="absolute bottom-20 left-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl float" style="animation-delay:3s"></div>
 <div class="max-w-7xl mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 items-center">
@@ -78,7 +93,7 @@ I'm a <br>
 <span class="gradient-text" id="typed-text"></span>
 </h1>
 <p class="text-slate-400 text-lg mb-8 max-w-lg">
-Fiber Optic & ELV Specialist with 5+ years of hands-on experience in GPON, FTTx, OTDR, Structured Cabling, Fusion Splicing, Low Voltage & BMS across KSA & Pakistan.
+IT Technician | Computer Hardware & Software Support | Fiber Optic & Structured Cabling | GPON/FTTx • OTDR • Low Voltage/BMS | CCNA in Progress
 </p>
 <div class="flex flex-wrap gap-3 mb-8">
 <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm">Johnson Controls</span>
@@ -110,7 +125,7 @@ Fiber Optic & ELV Specialist with 5+ years of hands-on experience in GPON, FTTx,
 </div>
 <div>
 <div class="font-semibold text-sm">Magrabi Hospital</div>
-<div class="text-xs text-slate-400">Structured Cabling & CCTV</div>
+<div class="text-xs text-slate-400">Structured Cabling, CCTV & Nurse Call</div>
 </div>
 </div>
 <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5">
@@ -119,7 +134,7 @@ Fiber Optic & ELV Specialist with 5+ years of hands-on experience in GPON, FTTx,
 </div>
 <div>
 <div class="font-semibold text-sm">Four Seasons Jeddah</div>
-<div class="text-xs text-slate-400">BMS & ELV Systems</div>
+<div class="text-xs text-slate-400">BMS, Fire Alarm & ELV Systems</div>
 </div>
 </div>
 <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5">
@@ -143,7 +158,7 @@ Fiber Optic & ELV Specialist with 5+ years of hands-on experience in GPON, FTTx,
 <div class="max-w-7xl mx-auto px-4">
 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center" data-aos="fade-up">
 <div>
-<div class="text-3xl md:text-4xl font-black gradient-text">5+</div>
+<div class="text-3xl md:text-4xl font-black gradient-text">6-7+</div>
 <div class="text-sm text-slate-400 mt-1">Years Experience</div>
 </div>
 <div>
@@ -172,13 +187,16 @@ Fiber Optic & ELV Specialist with 5+ years of hands-on experience in GPON, FTTx,
 </div>
 <h2 class="text-4xl font-black mb-6">Building Digital<br><span class="gradient-text">Infrastructure</span></h2>
 <p class="text-slate-400 mb-4 leading-relaxed">
-I began my career on-site, installing fiber optic and structured cabling systems, and over the past <strong>5+ years</strong>, I have built hands-on experience delivering telecom and low-voltage infrastructure projects across <strong>Pakistan and Saudi Arabia</strong>.
+I started my career working on-site, installing fiber optic and structured cabling systems. Over the past <strong>5+ years</strong>, I've worked on projects in both <strong>Pakistan and Saudi Arabia</strong>, gaining practical experience in fiber optics, structured cabling, and low-voltage systems. Alongside this field experience, I've also built strong hands-on skills in <strong>computer hardware and software installation, troubleshooting, and support</strong> over the years.
 </p>
 <p class="text-slate-400 mb-4 leading-relaxed">
-I specialize in low-voltage systems, including <strong>Building Management Systems (BMS), Fire Alarm, Access Control, and CCTV installations</strong>. My expertise spans the full project lifecycle — cable installation, device termination, testing, and supporting system commissioning — ensuring every installation meets approved design standards and quality benchmarks.
+These days, I work with <strong>Building Management Systems (BMS), Fire Alarm, Access Control, and CCTV installations</strong>. My daily work includes cable installation, device termination, testing, and supporting system commissioning.
+</p>
+<p class="text-slate-400 mb-4 leading-relaxed">
+At the same time, I'm building my networking knowledge by studying <strong>CCNA</strong>. My goal is to combine my field experience, hardware/software skills, and networking knowledge to grow into network infrastructure and IT support roles.
 </p>
 <p class="text-slate-400 mb-6 leading-relaxed">
-Committed to continuous growth, I am currently pursuing my <strong>CCNA certification</strong> to deepen my knowledge of network infrastructure and IT systems. My goal is to build on this strong field foundation, take on larger and more technically complex projects, and evolve into a well-rounded professional bridging low-voltage systems with modern network engineering.
+I enjoy learning new technologies, solving technical problems, and delivering clean, reliable work.
 </p>
 <div class="grid grid-cols-2 gap-4">
 <div class="p-4 rounded-xl bg-white/5 border border-white/10">
@@ -261,12 +279,12 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <i class="fas fa-chart-bar"></i> Expertise
 </div>
 <h2 class="text-4xl font-black mb-4">Technical <span class="gradient-text">Skills</span></h2>
-<p class="text-slate-400 max-w-2xl mx-auto">Core competencies developed through 5+ years of field experience across telecom and building infrastructure.</p>
+<p class="text-slate-400 max-w-2xl mx-auto">Core competencies developed through 6-7 years of field experience across telecom, IT support, and building infrastructure.</p>
 </div>
 <div class="grid md:grid-cols-2 gap-8">
 <div data-aos="fade-right">
 <h3 class="font-bold text-lg mb-6 flex items-center gap-2">
-<i class="fas fa-fiber-manual text-primary"></i> Fiber Optic & Telecom
+<i class="fas fa-fiber-manual text-primary"></i> Fiber Optic, Telecom & IT
 </h3>
 <div class="space-y-4">
 <div>
@@ -286,7 +304,7 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <div class="h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full skill-bar" style="width:0%" data-width="88%"></div></div>
 </div>
 <div>
-<div class="flex justify-between mb-1"><span class="text-sm font-medium">Underground & Aerial Routing</span><span class="text-sm text-primary">85%</span></div>
+<div class="flex justify-between mb-1"><span class="text-sm font-medium">Computer Hardware & Software Support</span><span class="text-sm text-primary">85%</span></div>
 <div class="h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full skill-bar" style="width:0%" data-width="85%"></div></div>
 </div>
 </div>
@@ -361,14 +379,15 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <div class="md:w-1/2 md:text-right md:pr-12">
 <div class="glass rounded-2xl p-6 hover:border-primary/50 transition border border-white/10">
 <div class="inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-medium mb-2">Current</div>
-<h3 class="font-bold text-lg">Fiber Optic & Low Voltage Field Technician</h3>
+<h3 class="font-bold text-lg">Low Voltage Field Technician</h3>
 <p class="text-primary font-medium">STS — Four Seasons Hotel & Resort, Jeddah</p>
 <p class="text-slate-400 text-sm mb-3">Jeddah, KSA | May 2024 — Present (2+ years)</p>
 <ul class="text-sm text-slate-300 space-y-1">
 <li>• Executing complete BMS low voltage field work — Johnson Controls & Honeywell devices</li>
-<li>• Installing VAV box devices, FCU devices, thermostats, actuators, valve controllers</li>
-<li>• Fire alarm device installation — smoke detectors, heat detectors, sounders per NFPA</li>
-<li>• Coordinating with site supervisors and MEP teams</li>
+<li>• Installing VAV box devices inside ductwork — actuators, dampers, and temperature sensors</li>
+<li>• Installing and terminating FCU devices — thermostats, actuators, and valve controllers wired to BMS panel</li>
+<li>• Cable pulling, routing, glanding, and termination of fire alarm devices — smoke detectors, heat detectors, sounders per NFPA</li>
+<li>• Coordinating with site supervisors and MEP teams to complete installations as per project schedule</li>
 </ul>
 </div>
 </div>
@@ -388,7 +407,8 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <li>• Delivered 500+ commercial fiber optic projects under PTCL</li>
 <li>• End-to-end GPON/FTTx: underground ducting, aerial routing, fusion splicing, ONT/ONU config</li>
 <li>• OTDR and OPM testing for splice loss and signal integrity</li>
-<li>• Managed fault tickets with minimal downtime</li>
+<li>• Managed fault tickets with minimal downtime across subscriber base</li>
+<li>• Contributed to subscriber growth through direct sales of PTCL fiber packages</li>
 </ul>
 </div>
 </div>
@@ -402,9 +422,10 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <p class="text-slate-400 text-sm mb-3">Bahawalpur, Pakistan | Jan 2023 — May 2023 (5 months)</p>
 <ul class="text-sm text-slate-300 space-y-1">
 <li>• 6-month intensive PTCL internship — GPON/FTTx field operations</li>
-<li>• Freelance ELV maintenance — CCTV fault diagnosis, access control</li>
-<li>• Basic LAN/WAN router configuration for commercial clients</li>
-<li>• Completed final year DAE while managing projects</li>
+<li>• Learned fiber optic fundamentals — cable structure, patch panel setup, end-to-end fiber network components</li>
+<li>• Gained understanding of GPON architecture and fiber-based internet/data services delivery</li>
+<li>• Learned power distribution concepts within telecom infrastructure</li>
+<li>• Observed and assisted with core telecom field operations, fiber splicing workflows, and network infrastructure basics</li>
 </ul>
 </div>
 </div>
@@ -425,6 +446,7 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <li>• NVR/DVR configuration, remote access setup, network integration</li>
 <li>• Fiber optic backbone for CCTV networks — routing, fusion splicing, termination</li>
 <li>• OTDR and OPM testing for fault identification and preventive maintenance</li>
+<li>• Installed and managed fiber patch panels, ODFs, network racks, and structured cabling</li>
 </ul>
 </div>
 </div>
@@ -455,12 +477,13 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary text-xs">Healthcare</span>
 </div>
 <h3 class="font-bold text-lg mb-2">Magrabi Hospital — Jeddah</h3>
-<p class="text-slate-400 text-sm mb-4">Complete structured data cabling infrastructure — Cat6 and fiber optic cable pulling, routing and termination across all floors. Fluke DSX certification testing with zero-fault handover.</p>
+<p class="text-slate-400 text-sm mb-4">Complete structured data cabling infrastructure — Cat6 and fiber optic cable pulling, routing and termination across all floors. Fluke DSX certification testing with zero-fault handover. Installed and commissioned complete CCTV system and Nurse Call System.</p>
 <div class="flex flex-wrap gap-2">
 <span class="px-2 py-1 rounded-md bg-white/5 text-xs">Cat6 Cabling</span>
 <span class="px-2 py-1 rounded-md bg-white/5 text-xs">Fiber Optic</span>
 <span class="px-2 py-1 rounded-md bg-white/5 text-xs">Fluke DSX</span>
-<span class="px-2 py-1 rounded-md bg-white/5 text-xs">Patch Panel</span>
+<span class="px-2 py-1 rounded-md bg-white/5 text-xs">CCTV</span>
+<span class="px-2 py-1 rounded-md bg-white/5 text-xs">Nurse Call</span>
 </div>
 </div>
 </div>
@@ -474,7 +497,7 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <span class="px-2 py-0.5 rounded-full bg-blue-400/10 text-blue-400 text-xs">Hospitality</span>
 </div>
 <h3 class="font-bold text-lg mb-2">Four Seasons Hotel & Resort — Jeddah</h3>
-<p class="text-slate-400 text-sm mb-4">Complete BMS low voltage field work — Johnson Controls and Honeywell device installation. VAV box and FCU device termination, fire alarm systems per NFPA standards, coordinated with MEP teams.</p>
+<p class="text-slate-400 text-sm mb-4">Complete BMS low voltage field work — Johnson Controls and Honeywell device installation. VAV box and FCU device termination, fire alarm systems per NFPA standards, coordinated with MEP teams. Cable pulling, routing, glanding, and termination across all floors.</p>
 <div class="flex flex-wrap gap-2">
 <span class="px-2 py-1 rounded-md bg-white/5 text-xs">Johnson Controls</span>
 <span class="px-2 py-1 rounded-md bg-white/5 text-xs">Honeywell</span>
@@ -493,7 +516,7 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <span class="px-2 py-0.5 rounded-full bg-amber-400/10 text-amber-400 text-xs">Telecom</span>
 </div>
 <h3 class="font-bold text-lg mb-2">500+ Fiber Projects — Pakistan</h3>
-<p class="text-slate-400 text-sm mb-4">Delivered 500+ commercial fiber optic projects across residential and commercial zones. End-to-end GPON/FTTx installation, underground ducting, aerial routing, fusion splicing, and ONT/ONU configuration.</p>
+<p class="text-slate-400 text-sm mb-4">Delivered 500+ commercial fiber optic projects across residential and commercial zones. End-to-end GPON/FTTx installation, underground ducting, aerial routing, fusion splicing, and ONT/ONU configuration. OTDR and OPM testing for every project.</p>
 <div class="flex flex-wrap gap-2">
 <span class="px-2 py-1 rounded-md bg-white/5 text-xs">GPON</span>
 <span class="px-2 py-1 rounded-md bg-white/5 text-xs">FTTx</span>
@@ -608,7 +631,7 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <i class="fas fa-envelope"></i> Contact
 </div>
 <h2 class="text-4xl font-black mb-4">Let's <span class="gradient-text">Connect</span></h2>
-<p class="text-slate-400 mb-8">Open to opportunities in telecom infrastructure, BMS, ELV, and low-voltage systems across Saudi Arabia.</p>
+<p class="text-slate-400 mb-8">Open to opportunities in telecom infrastructure, BMS, ELV, IT support, and low-voltage systems across Saudi Arabia.</p>
 <div class="space-y-4">
 <a href="https://wa.me/966537270792" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition">
 <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -689,7 +712,7 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 </div>
 <span class="font-bold">Muhammad Mueen</span>
 </div>
-<p class="text-sm text-slate-500 mb-4">Fiber Optic & ELV Specialist | GPON · FTTx · OTDR · Structured Cabling · BMS · Johnson Controls · Honeywell</p>
+<p class="text-sm text-slate-500 mb-4">IT Technician | Fiber Optic & ELV Specialist | GPON · FTTx · OTDR · Structured Cabling · BMS · Johnson Controls · Honeywell</p>
 <div class="flex justify-center gap-4 mb-4">
 <a href="https://www.linkedin.com/in/muhammadmueen-14513b314" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 transition"><i class="fab fa-linkedin text-primary"></i></a>
 <a href="https://wa.me/966537270792" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary/20 transition"><i class="fab fa-whatsapp text-secondary"></i></a>
@@ -702,7 +725,7 @@ Committed to continuous growth, I am currently pursuing my <strong>CCNA certific
 <!-- Scripts -->
 <script>
 new Typed('#typed-text', {
-  strings: ['Fiber Optic Specialist', 'ELV & BMS Expert', 'GPON / FTTx Professional', 'Telecom Infrastructure Technician'],
+  strings: ['IT Technician', 'Fiber Optic Specialist', 'ELV & BMS Expert', 'GPON / FTTx Professional', 'Computer Hardware & Software Support'],
   typeSpeed: 50,
   backSpeed: 30,
   backDelay: 2000,
