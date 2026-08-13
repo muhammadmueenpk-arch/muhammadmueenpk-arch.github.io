@@ -1,1572 +1,1029 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Muhammad Mueen — Telecom & Network Infrastructure Professional | Fiber Optic, Structured Cabling, Data Center, BMS | CCNA in Progress | Aspiring Enterprise Network Security Engineer based in Jeddah, KSA.">
-<meta name="keywords" content="Network Infrastructure, Fiber Optic, Structured Cabling, CCNA, Enterprise Networking, Network Security, BMS, ELV, Data Center, Jeddah, Saudi Arabia">
-<meta name="author" content="Muhammad Mueen">
-<title>Muhammad Mueen | Telecom & Network Infrastructure Professional</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-<style>
-:root { --primary: #06b6d4; --secondary: #10b981; --accent: #f59e0b; --danger: #ef4444; --dark: #0f172a; --darker: #020617; --surface: rgba(255,255,255,0.04); --border: rgba(255,255,255,0.08); }
-* { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; background: var(--darker); color: #e2e8f0; overflow-x: hidden; }
-.font-mono { font-family: 'JetBrains Mono', monospace; }
-.gradient-text { background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.glass { background: var(--surface); backdrop-filter: blur(12px); border: 1px solid var(--border); }
-.glass-hover { transition: all 0.3s ease; }
-.glass-hover:hover { background: rgba(255,255,255,0.06); border-color: rgba(6,182,212,0.3); transform: translateY(-2px); }
-.skill-tag { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; font-size: 0.8rem; font-weight: 500; transition: all 0.2s; }
-.skill-tag:hover { transform: translateY(-1px); }
-.skill-tag.expert { background: rgba(6,182,212,0.12); color: #22d3ee; border: 1px solid rgba(6,182,212,0.25); }
-.skill-tag.advanced { background: rgba(16,185,129,0.12); color: #34d399; border: 1px solid rgba(16,185,129,0.25); }
-.skill-tag.intermediate { background: rgba(245,158,11,0.12); color: #fbbf24; border: 1px solid rgba(245,158,11,0.25); }
-.skill-tag.learning { background: rgba(239,68,68,0.08); color: #f87171; border: 1px solid rgba(239,68,68,0.2); }
-.nav-link { position: relative; }
-.nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, var(--primary), var(--secondary)); transition: width 0.3s; border-radius: 2px; }
-.nav-link:hover::after { width: 100%; }
-.mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
-.mobile-menu.open { transform: translateX(0); }
-.project-card { transition: all 0.4s cubic-bezier(0.4,0,0.2,1); }
-.project-card:hover { transform: translateY(-8px) scale(1.01); }
-.project-card:hover .project-overlay { opacity: 1; }
-.project-overlay { opacity: 0; transition: opacity 0.3s; }
-.cert-card { position: relative; overflow: hidden; }
-.cert-card::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent); transition: left 0.6s; }
-.cert-card:hover::before { left: 100%; }
-.timeline-card { position: relative; }
-.timeline-card::before { content: ''; position: absolute; width: 12px; height: 12px; border-radius: 50%; background: var(--primary); border: 3px solid var(--darker); top: 24px; z-index: 2; }
-.timeline-left::before { right: -6px; }
-.timeline-right::before { left: -6px; }
-@media (max-width: 768px) { .timeline-card::before { left: -6px !important; right: auto !important; } }
-.hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 50%, rgba(6,182,212,0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(16,185,129,0.06) 0%, transparent 50%), radial-gradient(ellipse at 50% 100%, rgba(245,158,11,0.04) 0%, transparent 50%); }
-.section-label { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
-.btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; font-weight: 600; padding: 12px 28px; border-radius: 12px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px; }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(6,182,212,0.3); }
-.btn-secondary { background: transparent; color: #e2e8f0; font-weight: 600; padding: 12px 28px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.15); transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px; }
-.btn-secondary:hover { background: rgba(255,255,255,0.05); border-color: rgba(6,182,212,0.4); }
-.btn-small { padding: 8px 16px; font-size: 0.8rem; }
-.counter { font-variant-numeric: tabular-nums; }
-.service-card { transition: all 0.3s ease; }
-.service-card:hover { transform: translateY(-5px); border-color: rgba(6,182,212,0.3); }
-@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-15px)} }
-.float { animation: float 5s ease-in-out infinite; }
-.float-delay { animation: float 6s ease-in-out infinite; animation-delay: 2s; }
-.copy-toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--primary); color: white; padding: 10px 24px; border-radius: 999px; font-weight: 600; font-size: 0.85rem; opacity: 0; transition: all 0.4s ease; z-index: 9999; }
-.copy-toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
-</style>
-<script>
-tailwind.config = { theme: { extend: { colors: { primary: '#06b6d4', secondary: '#10b981', accent: '#f59e0b', danger: '#ef4444', dark: '#0f172a', darker: '#020617', } } } }
-</script>
-<base target="_blank">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Mueen | Network Infrastructure & Telecom Specialist</title>
+    <meta name="description" content="Muhammad Mueen - Network Infrastructure Specialist with 5+ years experience in Fiber Optics, GPON/FTTx, Structured Cabling, CCTV, BMS and ELV systems. Based in Jeddah, Saudi Arabia.">
+    <meta name="keywords" content="Network Infrastructure, Fiber Optics, GPON, FTTx, Structured Cabling, Telecom, ELV, BMS, CCTV, Jeddah, Saudi Arabia">
+    <meta name="author" content="Muhammad Mueen">
+    <meta property="og:title" content="Muhammad Mueen | Network Infrastructure Specialist">
+    <meta property="og:description" content="5+ years hands-on experience in fiber optic networks, structured cabling, and low-voltage systems across Saudi Arabia and Pakistan.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://muhammadmueen.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 900: '#0a1628', 800: '#0f1d32', 700: '#1a2f4d', 600: '#1e3a5f', 500: '#2a4a73' },
+                        tech: { cyan: '#00d4ff', blue: '#0ea5e9', accent: '#38bdf8' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root { --navy-900: #0a1628; --tech-cyan: #00d4ff; --tech-blue: #0ea5e9; }
+        * { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: #334155; overflow-x: hidden; }
+        .network-bg {
+            background-color: var(--navy-900);
+            background-image: radial-gradient(circle at 15% 50%, rgba(0,212,255,0.04) 0%, transparent 40%),
+                radial-gradient(circle at 85% 20%, rgba(14,165,233,0.04) 0%, transparent 40%);
+        }
+        .circuit-h { position: absolute; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,212,255,0.25), transparent); }
+        .circuit-v { position: absolute; width: 1px; background: linear-gradient(180deg, transparent, rgba(0,212,255,0.25), transparent); }
+        #networkCanvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.35; pointer-events: none; }
+        @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+        @keyframes pulse-glow { 0%,100% { box-shadow: 0 0 20px rgba(0,212,255,0.1); } 50% { box-shadow: 0 0 40px rgba(0,212,255,0.25); } }
+        @keyframes slideInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-slide-up { animation: slideInUp 0.8s ease-out forwards; }
+        .reveal { opacity: 0; transform: translateY(35px); transition: all 0.9s cubic-bezier(0.16,1,0.3,1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .tech-card { background: white; border: 1px solid rgba(0,212,255,0.08); transition: all 0.4s cubic-bezier(0.16,1,0.3,1); position: relative; overflow: hidden; }
+        .tech-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--tech-cyan), var(--tech-blue)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+        .tech-card:hover::before { transform: scaleX(1); }
+        .tech-card:hover { border-color: rgba(0,212,255,0.25); transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0,212,255,0.12); }
+        .tech-card .icon-wrap { transition: all 0.4s ease; }
+        .tech-card:hover .icon-wrap { transform: scale(1.1); color: var(--tech-cyan); }
+        .timeline-line { position: absolute; left: 28px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--tech-cyan), var(--tech-blue), rgba(14,165,233,0.1)); }
+        @media (min-width: 768px) { .timeline-line { left: 50%; transform: translateX(-1px); } }
+        .timeline-dot { width: 16px; height: 16px; border-radius: 50%; background: var(--navy-900); border: 3px solid var(--tech-cyan); box-shadow: 0 0 0 4px rgba(0,212,255,0.15); z-index: 10; transition: all 0.3s ease; }
+        .timeline-dot:hover { transform: scale(1.3); box-shadow: 0 0 0 8px rgba(0,212,255,0.2); }
+        .timeline-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(0,212,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease; }
+        .timeline-card:hover { border-color: rgba(0,212,255,0.25); background: rgba(255,255,255,0.05); }
+        .skill-tag { background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(14,165,233,0.05)); border: 1px solid rgba(0,212,255,0.15); transition: all 0.3s ease; }
+        .skill-tag:hover { background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(14,165,233,0.1)); border-color: rgba(0,212,255,0.3); transform: translateY(-2px); }
+        .project-card { position: relative; overflow: hidden; border: 1px solid rgba(0,212,255,0.1); }
+        .project-card .project-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 30%, rgba(10,22,40,0.95) 100%); opacity: 0.9; transition: opacity 0.3s ease; }
+        .project-card:hover .project-overlay { opacity: 1; }
+        .tool-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(0,212,255,0.08); transition: all 0.3s ease; }
+        .tool-card:hover { background: rgba(0,212,255,0.05); border-color: rgba(0,212,255,0.25); transform: translateY(-4px); }
+        .btn-primary { background: linear-gradient(135deg, var(--tech-cyan), var(--tech-blue)); color: var(--navy-900); font-weight: 600; transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .btn-primary::after { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transition: left 0.5s ease; }
+        .btn-primary:hover::after { left: 100%; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,212,255,0.3); }
+        .btn-outline { border: 2px solid rgba(0,212,255,0.4); color: var(--tech-cyan); transition: all 0.3s ease; }
+        .btn-outline:hover { background: rgba(0,212,255,0.1); border-color: var(--tech-cyan); transform: translateY(-2px); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--navy-900); }
+        ::-webkit-scrollbar-thumb { background: var(--navy-600); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--tech-blue); }
+        .section-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent); }
+        .nav-link { position: relative; color: #94a3b8; transition: color 0.3s ease; }
+        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--tech-cyan); transition: width 0.3s ease; }
+        .nav-link:hover, .nav-link.active { color: white; }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
+        .mobile-menu.open { transform: translateX(0); }
+        .cert-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(0,212,255,0.05); border: 1px solid rgba(0,212,255,0.15); border-radius: 9999px; font-size: 0.875rem; transition: all 0.3s ease; }
+        .cert-badge:hover { background: rgba(0,212,255,0.1); border-color: rgba(0,212,255,0.3); }
+        .cert-badge.in-progress { background: rgba(251,191,36,0.05); border-color: rgba(251,191,36,0.2); color: #fbbf24; }
+        .cert-badge.in-progress:hover { background: rgba(251,191,36,0.1); }
+        .stat-number { background: linear-gradient(135deg, var(--tech-cyan), var(--tech-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        @media print { nav, .no-print { display: none !important; } section { page-break-inside: avoid; } body { color: #000 !important; background: #fff !important; } }
+    </style>
 <base target="_blank">
 </head>
-<body class="bg-darker text-slate-200 overflow-x-hidden">
+<body class="antialiased">
 
-<!-- NAVIGATION -->
-<nav id="navbar" aria-label="Main navigation" class="fixed top-0 w-full z-50 transition-all duration-300" style="background: transparent;">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-<a href="#home" class="flex items-center gap-3 group">
-<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition">
-<i class="fas fa-network-wired text-white text-sm"></i>
-</div>
-<div>
-<span class="font-bold text-white text-lg tracking-tight">Muhammad Mueen</span>
-<span class="hidden sm:block text-[10px] text-slate-400 font-mono tracking-wider uppercase">Infrastructure & Networking</span>
-</div>
-</a>
-<div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-<a href="#home" class="nav-link hover:text-primary transition">Home</a>
-<a href="#about" class="nav-link hover:text-primary transition">About</a>
-<a href="#services" class="nav-link hover:text-primary transition">Services</a>
-<a href="#skills" class="nav-link hover:text-primary transition">Skills</a>
-<a href="#experience" class="nav-link hover:text-primary transition">Experience</a>
-<a href="#projects" class="nav-link hover:text-primary transition">Projects</a>
-<a href="#certifications" class="nav-link hover:text-primary transition">Credentials</a>
-<a href="#contact" class="nav-link hover:text-primary transition">Contact</a>
-</div>
-<div class="flex items-center gap-3">
-<a href="https://www.linkedin.com/in/muhammad-mueen-14513b314" target="_blank" class="hidden sm:inline-flex btn-primary text-sm py-2.5 px-5">
-<i class="fab fa-linkedin"></i> LinkedIn
-</a>
-<button id="mobile-toggle" class="lg:hidden w-10 h-10 rounded-xl glass flex items-center justify-center">
-<i class="fas fa-bars text-white"></i>
-</button>
-</div>
-</div>
+<nav id="navbar" class="fixed w-full z-50 transition-all duration-300" style="background: rgba(10,22,40,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,212,255,0.08);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 md:h-20">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-tech-cyan to-tech-blue flex items-center justify-center text-navy-900 font-bold text-lg group-hover:scale-110 transition-transform">MM</div>
+                <div class="hidden sm:block">
+                    <span class="text-white font-bold text-lg tracking-tight">Muhammad Mueen</span>
+                    <span class="block text-xs text-slate-400 -mt-1">Network Infrastructure Specialist</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="nav-link text-sm font-medium">About</a>
+                <a href="#expertise" class="nav-link text-sm font-medium">Expertise</a>
+                <a href="#experience" class="nav-link text-sm font-medium">Experience</a>
+                <a href="#projects" class="nav-link text-sm font-medium">Projects</a>
+                <a href="#certifications" class="nav-link text-sm font-medium">Certifications</a>
+                <a href="#contact" class="btn-primary px-5 py-2 rounded-lg text-sm">Contact Me</a>
+            </div>
+            <button id="mobileMenuBtn" class="md:hidden text-white p-2" aria-label="Open menu"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-navy-800 z-50 shadow-2xl md:hidden" style="border-left: 1px solid rgba(0,212,255,0.1);">
+        <div class="p-6">
+            <button id="closeMenuBtn" class="absolute top-4 right-4 text-slate-400 hover:text-white" aria-label="Close menu"><i class="fas fa-times text-xl"></i></button>
+            <div class="mt-12 flex flex-col gap-6">
+                <a href="#about" class="text-slate-300 hover:text-tech-cyan font-medium transition-colors">About</a>
+                <a href="#expertise" class="text-slate-300 hover:text-tech-cyan font-medium transition-colors">Expertise</a>
+                <a href="#experience" class="text-slate-300 hover:text-tech-cyan font-medium transition-colors">Experience</a>
+                <a href="#projects" class="text-slate-300 hover:text-tech-cyan font-medium transition-colors">Projects</a>
+                <a href="#certifications" class="text-slate-300 hover:text-tech-cyan font-medium transition-colors">Certifications</a>
+                <a href="#contact" class="btn-primary px-5 py-3 rounded-lg text-center font-medium mt-4">Contact Me</a>
+            </div>
+        </div>
+    </div>
 </nav>
 
-<div id="mobile-menu" aria-label="Mobile navigation" class="mobile-menu fixed inset-y-0 right-0 w-72 bg-darker border-l border-white/10 z-50 p-6 lg:hidden">
-<button id="mobile-close" class="absolute top-4 right-4 w-10 h-10 rounded-xl glass flex items-center justify-center">
-<i class="fas fa-times text-white"></i>
-</button>
-<div class="mt-12 flex flex-col gap-4">
-<a href="#home" class="mobile-link text-lg font-medium py-2 border-b border-white/5">Home</a>
-<a href="#about" class="mobile-link text-lg font-medium py-2 border-b border-white/5">About</a>
-<a href="#services" class="mobile-link text-lg font-medium py-2 border-b border-white/5">Services</a>
-<a href="#skills" class="mobile-link text-lg font-medium py-2 border-b border-white/5">Skills</a>
-<a href="#experience" class="mobile-link text-lg font-medium py-2 border-b border-white/5">Experience</a>
-<a href="#projects" class="mobile-link text-lg font-medium py-2 border-b border-white/5">Projects</a>
-<a href="#certifications" class="mobile-link text-lg font-medium py-2 border-b border-white/5">Credentials</a>
-<a href="#contact" class="mobile-link text-lg font-medium py-2 border-b border-white/5">Contact</a>
-<a href="https://www.linkedin.com/in/muhammad-mueen-14513b314" target="_blank" class="btn-primary text-sm mt-4 justify-center">
-<i class="fab fa-linkedin"></i> View LinkedIn Profile
-</a>
-</div>
-</div>
-<div id="mobile-overlay" role="dialog" aria-hidden="true" class="fixed inset-0 bg-black/60 z-40 hidden lg:hidden"></div>
+<section id="hero" class="relative min-h-screen flex items-center overflow-hidden" style="background-image: url('photo.png'); background-size: 118% auto; background-position: 62% 12%; background-repeat: no-repeat;">
+    <canvas id="networkCanvas"></canvas>
 
-<!-- HERO SECTION -->
-<section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
-<div class="hero-bg"></div>
-<div class="absolute top-24 right-10 w-80 h-80 bg-primary/10 rounded-full blur-[100px] float"></div>
-<div class="absolute bottom-20 left-10 w-96 h-96 bg-secondary/8 rounded-full blur-[120px] float-delay"></div>
-<div class="absolute top-1/2 left-1/3 w-64 h-64 bg-accent/6 rounded-full blur-[80px] float" style="animation-delay:1s"></div>
-<div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 grid lg:grid-cols-5 gap-12 items-center">
-<div class="lg:col-span-3" data-aos="fade-right" data-aos-duration="1000">
-<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold mb-6">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> Open to Work — Jeddah, KSA | Full-time & Contract
-</div>
-<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-4 leading-[1.1] tracking-tight">
-Telecom & Network<br>
-<span class="gradient-text">Infrastructure</span> Professional
-</h1>
-<div class="text-lg sm:text-xl text-slate-400 mb-6 font-light">
-<span id="typed-hero"></span>
-</div>
-<p class="text-slate-400 text-base sm:text-lg mb-8 max-w-xl leading-relaxed">
-<strong class="text-slate-200">5+ years</strong> of hands-on experience designing and deploying <strong class="text-slate-200">fiber optic, structured cabling, and low-voltage systems</strong> across Pakistan and Saudi Arabia. Currently advancing into <strong class="text-primary">enterprise networking</strong> through CCNA (VLANs, subnetting, OSPF), with a clear roadmap toward <strong class="text-secondary">network security engineering</strong> — CCNP, Fortinet, and Palo Alto next.
-</p>
-<div class="flex flex-wrap gap-2 mb-8">
-<span class="skill-tag expert"><i class="fas fa-broadcast-tower text-[10px]"></i> Fiber Optic</span>
-<span class="skill-tag expert"><i class="fas fa-ethernet text-[10px]"></i> Structured Cabling</span>
-<span class="skill-tag expert"><i class="fas fa-server text-[10px]"></i> Data Center</span>
-<span class="skill-tag advanced"><i class="fas fa-building text-[10px]"></i> BMS / ELV</span>
-<span class="skill-tag intermediate"><i class="fas fa-network-wired text-[10px]"></i> CCNA (In Progress)</span>
-<span class="skill-tag learning"><i class="fas fa-shield-alt text-[10px]"></i> Network Security</span>
-</div>
-<div class="flex flex-wrap gap-3">
-<a href="https://wa.me/966537270792" target="_blank" class="btn-primary">
-<i class="fab fa-whatsapp"></i> Let's Talk
-</a>
-<a href="#roadmap" class="btn-secondary">
-<i class="fas fa-route"></i> View My Roadmap
-</a>
-<a href="muhammad_mueen_cv.pdf" download class="btn-secondary hidden sm:inline-flex">
-<i class="fas fa-download"></i> Download CV
-</a>
-</div>
-</div>
-<div class="lg:col-span-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-<div class="relative">
-<div class="absolute -inset-4 bg-gradient-to-br from-primary/20 via-secondary/10 to-accent/10 rounded-3xl blur-2xl"></div>
-<div class="relative glass rounded-3xl p-6 border border-white/10">
-<!-- PHOTO -->
-<div class="mb-5 text-center">
-<div class="relative inline-block">
-<!-- Glow background -->
-<div class="absolute -inset-3 bg-gradient-to-br from-primary/30 via-secondary/20 to-accent/15 rounded-2xl blur-2xl opacity-80"></div>
-<!-- Photo container -->
-<div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-primary/20">
-<img src="profile-photo.png" alt="Muhammad Mueen" class="w-full max-w-[240px] h-auto object-cover" onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';">
-</div>
-<!-- Fallback icon -->
-<div class="hidden relative w-[240px] h-[300px] rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 border-2 border-white/10 mx-auto items-center justify-center">
-<i class="fas fa-user text-5xl text-primary/50"></i>
-</div>
-<!-- Online status dot -->
-<div class="absolute -bottom-1.5 -right-1.5 w-5 h-5 rounded-full bg-primary border-[3px] border-darker animate-pulse shadow-lg shadow-primary/50 z-10" title="Available for Work"></div>
-</div>
-<h3 class="font-bold text-lg mt-4">Muhammad Mueen</h3>
-<p class="text-xs text-slate-500">Network Infrastructure Specialist</p>
-</div>
-<div class="mb-5">
-<div class="flex items-center gap-2 mb-3">
-<div class="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center">
-<i class="fas fa-route text-primary text-sm"></i>
-</div>
-<span class="font-semibold text-sm">My Career Journey</span>
-</div>
-<div class="space-y-3">
-<div class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/5">
-<div class="w-2 h-2 rounded-full bg-primary"></div>
-<div class="flex-1">
-<div class="text-xs font-medium text-slate-300">Infrastructure Foundation</div>
-<div class="text-[10px] text-slate-500">Fiber, Cabling, BMS, Data Centers</div>
-</div>
-<i class="fas fa-check-circle text-primary text-xs"></i>
-</div>
-<div class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-primary/20">
-<div class="w-2 h-2 rounded-full bg-accent animate-pulse"></div>
-<div class="flex-1">
-<div class="text-xs font-medium text-slate-300">Enterprise Networking</div>
-<div class="text-[10px] text-accent">CCNA In Progress &middot; CCNP Target</div>
-</div>
-<i class="fas fa-spinner text-accent text-xs animate-spin"></i>
-</div>
-<div class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/5 opacity-60">
-<div class="w-2 h-2 rounded-full bg-slate-600"></div>
-<div class="flex-1">
-<div class="text-xs font-medium text-slate-400">Network Security</div>
-<div class="text-[10px] text-slate-600">CCNP Security &middot; Firewall &middot; VPN</div>
-</div>
-<i class="fas fa-lock text-slate-600 text-xs"></i>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-2 gap-3">
-<div class="p-3 rounded-xl bg-white/[0.03] text-center">
-<div class="text-2xl font-black gradient-text counter" data-target="5">0</div>
-<div class="text-[10px] text-slate-500 mt-0.5">Years Experience</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center">
-<div class="text-2xl font-black gradient-text counter" data-target="500">0</div>
-<div class="text-[10px] text-slate-500 mt-0.5">Infrastructure Projects</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center">
-<div class="text-2xl font-black gradient-text counter" data-target="200">0</div>
-<div class="text-[10px] text-slate-500 mt-0.5">CCTV Systems</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center">
-<div class="text-2xl font-black gradient-text">2</div>
-<div class="text-[10px] text-slate-500 mt-0.5">Countries</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
-<span class="text-[10px] uppercase tracking-widest text-slate-500">Scroll</span>
-<div class="w-5 h-8 rounded-full border border-white/20 flex justify-center pt-1">
-<div class="w-1 h-2 bg-primary rounded-full animate-bounce"></div>
-</div>
-</div>
-</section>
-
-
-
-<!-- ABOUT SECTION -->
-<section id="about" class="py-24">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="grid lg:grid-cols-2 gap-16 items-start">
-<div data-aos="fade-right" data-aos-duration="800">
-<div class="section-label bg-secondary/10 border border-secondary/20 text-secondary mb-6">
-<i class="fas fa-user"></i> About Me
-</div>
-<h2 class="text-3xl sm:text-4xl font-black mb-6 leading-tight">From Physical Infrastructure<br>to <span class="gradient-text">Enterprise Networks</span></h2>
-<div class="space-y-4 text-slate-400 leading-relaxed">
-<p class="text-lg text-slate-300">
-<strong class="text-white">Enterprise networking isn't just about configuring routers and switches—it's about understanding the entire infrastructure that keeps businesses connected. That's the direction I'm building my career toward.
-</p>
-<p> I'm currently expanding my expertise in Enterprise Networking, with a strong focus on <strong class="text-primary">Routing & Switching, TCP/IP, VLANs, Network Troubleshooting, and Network Security</strong> through my CCNA journey. My goal is to design, deploy, and maintain secure, reliable, and scalable enterprise networks that support modern organizations. </p>
-<p> What makes my background different is that I don't only understand network configurations—I understand the <strong class="text-slate-200">infrastructure those networks run on</strong>. </p>
-<p> With over <strong class="text-slate-200">5+ years of hands-on experience</strong> across Saudi Arabia and Pakistan, I've worked on fiber optic installations, OTDR testing, GPON/FTTx deployments, structured cabling, rack installation, patch panel termination, and low-voltage systems. I've been part of projects where network reliability depended on getting the <strong class="text-primary">physical layer right</strong> from the very beginning. </p>
-<p> That experience taught me an important lesson: many network issues don't start with configuration—they start with the <strong class="text-slate-200">physical infrastructure</strong>. A damaged fiber, poor termination, or incorrect installation can affect an entire network. Understanding both the physical and logical layers allows me to troubleshoot more effectively and build networks with long-term reliability in mind. </p>
-<p> I believe the strongest network professionals are those who can bridge the gap between physical infrastructure and enterprise networking. That's the perspective I bring to every project—combining practical field experience with growing expertise in modern networking technologies. </p>
-<p> Currently based in <strong class="text-slate-200">Jeddah, Saudi Arabia</strong>, I am actively seeking opportunities in <strong class="text-primary">Enterprise Networking, Network Support, Telecom Infrastructure, Data Centers, and BMS/ELV Systems</strong>. As I continue progressing toward CCNA, CCNP, and Network Security, my objective is to contribute to organizations by building secure, scalable, and high-performing network infrastructures that are designed to last. </p>
-</div>
-<div class="grid grid-cols-2 gap-4 mt-8">
-<div class="p-4 rounded-xl glass glass-hover">
-<div class="text-primary text-xl mb-2"><i class="fas fa-map-marker-alt"></i></div>
-<div class="font-semibold text-sm">Based in</div>
-<div class="text-xs text-slate-500">Jeddah, Makkah, KSA</div>
-</div>
-<div class="p-4 rounded-xl glass glass-hover">
-<div class="text-secondary text-xl mb-2"><i class="fas fa-graduation-cap"></i></div>
-<div class="font-semibold text-sm">Education</div>
-<div class="text-xs text-slate-500">Associate Engineering in Telecommunication (DAE)</div>
-</div>
-<div class="p-4 rounded-xl glass glass-hover">
-<div class="text-accent text-xl mb-2"><i class="fas fa-certificate"></i></div>
-<div class="font-semibold text-sm">Certifications</div>
-<div class="text-xs text-slate-500">CCNA (In Progress)</div>
-</div>
-<div class="p-4 rounded-xl glass glass-hover">
-<div class="text-purple-400 text-xl mb-2"><i class="fas fa-language"></i></div>
-<div class="font-semibold text-sm">Languages</div>
-<div class="text-xs text-slate-500">Urdu (Native), English (Professional), Arabic (Basic)</div>
-</div>
-</div>
-</div>
-<div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-<div class="sticky top-24">
-<div class="glass rounded-2xl p-6 border border-white/10 mb-6">
-<h3 class="font-bold text-lg mb-5 flex items-center gap-2">
-<i class="fas fa-tools text-primary"></i> Tools & Equipment
-</h3>
-<div class="grid grid-cols-3 gap-3">
-<div class="p-3 rounded-xl bg-white/[0.03] text-center hover:bg-white/[0.06] transition group">
-<i class="fas fa-wave-square text-primary text-lg mb-1 group-hover:scale-110 transition"></i>
-<div class="text-[11px] text-slate-400">OTDR</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center hover:bg-white/[0.06] transition group">
-<i class="fas fa-link text-secondary text-lg mb-1 group-hover:scale-110 transition"></i>
-<div class="text-[11px] text-slate-400">Fusion Splicer</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center hover:bg-white/[0.06] transition group">
-<i class="fas fa-bolt text-accent text-lg mb-1 group-hover:scale-110 transition"></i>
-<div class="text-[11px] text-slate-400">OPM</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center hover:bg-white/[0.06] transition group">
-<i class="fas fa-vial text-purple-400 text-lg mb-1 group-hover:scale-110 transition"></i>
-<div class="text-[11px] text-slate-400">VFL</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center hover:bg-white/[0.06] transition group">
-<i class="fas fa-clipboard-check text-emerald-400 text-lg mb-1 group-hover:scale-110 transition"></i>
-<div class="text-[11px] text-slate-400">Fluke DSX</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center hover:bg-white/[0.06] transition group">
-<i class="fas fa-network-wired text-blue-400 text-lg mb-1 group-hover:scale-110 transition"></i>
-<div class="text-[11px] text-slate-400">Cable Certifier</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center hover:bg-white/[0.06] transition group">
-<i class="fas fa-server text-cyan-400 text-lg mb-1 group-hover:scale-110 transition"></i>
-<div class="text-[11px] text-slate-400">Patch Panels</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center hover:bg-white/[0.06] transition group">
-<i class="fas fa-columns text-rose-400 text-lg mb-1 group-hover:scale-110 transition"></i>
-<div class="text-[11px] text-slate-400">Rack Mount</div>
-</div>
-<div class="p-3 rounded-xl bg-white/[0.03] text-center hover:bg-white/[0.06] transition group">
-<i class="fas fa-project-diagram text-amber-400 text-lg mb-1 group-hover:scale-110 transition"></i>
-<div class="text-[11px] text-slate-400">ODF / ODFs</div>
-</div>
-</div>
-</div>
-<div class="mt-6 glass rounded-2xl p-6 border border-accent/20">
-<div class="flex items-center gap-2 mb-3">
-<i class="fas fa-bullseye text-accent"></i>
-<span class="font-semibold text-sm">Current Focus</span>
-</div>
-<div class="space-y-2">
-<div class="flex items-center gap-2 text-sm">
-<i class="fas fa-check-circle text-primary text-xs"></i>
-<span class="text-slate-400">CCNA Routing & Switching</span>
-</div>
-<div class="flex items-center gap-2 text-sm">
-<i class="fas fa-check-circle text-primary text-xs"></i>
-<span class="text-slate-400">Enterprise Network Design Concepts</span>
-</div>
-<div class="flex items-center gap-2 text-sm">
-<i class="fas fa-circle text-slate-700 text-[6px]"></i>
-<span class="text-slate-500">Network Security Fundamentals</span>
-</div>
-<div class="flex items-center gap-2 text-sm">
-<i class="fas fa-circle text-slate-700 text-[6px]"></i>
-<span class="text-slate-500">Python for Network Automation</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- SERVICES SECTION -->
-<section id="services" class="py-24 bg-dark/30">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16" data-aos="fade-up">
-<div class="section-label bg-primary/10 border border-primary/20 text-primary mb-6 mx-auto">
-<i class="fas fa-cogs"></i> Services
-</div>
-<h2 class="text-3xl sm:text-4xl font-black mb-4">What I <span class="gradient-text">Deliver</span></h2>
-<p class="text-slate-400 max-w-2xl mx-auto">End-to-end infrastructure services from physical layer deployment to network configuration and troubleshooting.</p>
-</div>
-<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-<div class="service-card glass rounded-xl p-6 border border-white/10" data-aos="fade-up" data-aos-delay="0">
-<div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center mb-4">
-<i class="fas fa-broadcast-tower text-primary text-xl"></i>
-</div>
-<h3 class="font-bold text-white mb-2">Fiber Optic Installation</h3>
-<p class="text-sm text-slate-400 leading-relaxed">Fusion splicing, OTDR testing, GPON/FTTx deployment, aerial & underground routing, ODF termination.</p>
-</div>
-<div class="service-card glass rounded-xl p-6 border border-white/10" data-aos="fade-up" data-aos-delay="100">
-<div class="w-12 h-12 rounded-xl bg-secondary/15 flex items-center justify-center mb-4">
-<i class="fas fa-ethernet text-secondary text-xl"></i>
-</div>
-<h3 class="font-bold text-white mb-2">Structured Cabling</h3>
-<p class="text-sm text-slate-400 leading-relaxed">Cat6/Cat6A installation, patch panel termination, rack mounting, cable management, Fluke DSX certification.</p>
-</div>
-<div class="service-card glass rounded-xl p-6 border border-white/10" data-aos="fade-up" data-aos-delay="200">
-<div class="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center mb-4">
-<i class="fas fa-network-wired text-accent text-xl"></i>
-</div>
-<h3 class="font-bold text-white mb-2">GPON / FTTx</h3>
-<p class="text-sm text-slate-400 leading-relaxed">End-to-end fiber-to-the-x deployment, ONT/ONU configuration, subscriber provisioning, fault management.</p>
-</div>
-<div class="service-card glass rounded-xl p-6 border border-white/10" data-aos="fade-up" data-aos-delay="300">
-<div class="w-12 h-12 rounded-xl bg-blue-400/15 flex items-center justify-center mb-4">
-<i class="fas fa-server text-blue-400 text-xl"></i>
-</div>
-<h3 class="font-bold text-white mb-2">Data Center</h3>
-<p class="text-sm text-slate-400 leading-relaxed">Server room build-out, rack installation, fiber backbone, cable ladder/tray, power distribution, cooling coordination.</p>
-</div>
-<div class="service-card glass rounded-xl p-6 border border-white/10" data-aos="fade-up" data-aos-delay="0">
-<div class="w-12 h-12 rounded-xl bg-emerald-400/15 flex items-center justify-center mb-4">
-<i class="fas fa-building text-emerald-400 text-xl"></i>
-</div>
-<h3 class="font-bold text-white mb-2">BMS / ELV Systems</h3>
-<p class="text-sm text-slate-400 leading-relaxed">Johnson Controls & Honeywell device installation, VAV/FCU networking, fire alarm NFPA compliance, access control.</p>
-</div>
-<div class="service-card glass rounded-xl p-6 border border-white/10" data-aos="fade-up" data-aos-delay="100">
-<div class="w-12 h-12 rounded-xl bg-purple-400/15 flex items-center justify-center mb-4">
-<i class="fas fa-video text-purple-400 text-xl"></i>
-</div>
-<h3 class="font-bold text-white mb-2">CCTV Systems</h3>
-<p class="text-sm text-slate-400 leading-relaxed">IP/Analog camera deployment, NVR/DVR configuration, remote access setup, fiber backbone for CCTV networks.</p>
-</div>
-<div class="service-card glass rounded-xl p-6 border border-white/10" data-aos="fade-up" data-aos-delay="200">
-<div class="w-12 h-12 rounded-xl bg-rose-400/15 flex items-center justify-center mb-4">
-<i class="fas fa-project-diagram text-rose-400 text-xl"></i>
-</div>
-<h3 class="font-bold text-white mb-2">Network Configuration</h3>
-<p class="text-sm text-slate-400 leading-relaxed">VLAN setup, basic routing & switching, IP addressing schemes, subnetting, ONT/ONU provisioning.</p>
-</div>
-<div class="service-card glass rounded-xl p-6 border border-white/10" data-aos="fade-up" data-aos-delay="300">
-<div class="w-12 h-12 rounded-xl bg-amber-400/15 flex items-center justify-center mb-4">
-<i class="fas fa-wrench text-amber-400 text-xl"></i>
-</div>
-<h3 class="font-bold text-white mb-2">Network Troubleshooting</h3>
-<p class="text-sm text-slate-400 leading-relaxed">Physical layer fault isolation, OTDR analysis, connectivity testing, performance benchmarking, preventive maintenance.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- SKILLS SECTION -->
-<section id="skills" class="py-24">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16" data-aos="fade-up">
-<div class="section-label bg-primary/10 border border-primary/20 text-primary mb-6 mx-auto">
-<i class="fas fa-layer-group"></i> Technical Expertise
-</div>
-<h2 class="text-3xl sm:text-4xl font-black mb-4">Skills Across the <span class="gradient-text">OSI Stack</span></h2>
-<p class="text-slate-400 max-w-2xl mx-auto"> From physical layer infrastructure to network layer fundamentals. Proficiency levels reflect hands-on experience (Expert/Advanced) versus active study (Intermediate/Learning). </p>
-</div>
-<div class="grid lg:grid-cols-3 gap-6">
-<div data-aos="fade-up" data-aos-delay="0">
-<div class="glass rounded-2xl p-6 border border-primary/15 h-full">
-<div class="flex items-center gap-3 mb-5">
-<div class="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center">
-<i class="fas fa-broadcast-tower text-primary"></i>
-</div>
-<div>
-<h3 class="font-bold">Physical Infrastructure</h3>
-<div class="text-[10px] text-primary font-mono">Layer 0-1 &middot; Expert Level</div>
-</div>
-</div>
-<div class="space-y-3">
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Fiber Splicing (Fusion/Mechanical)</span>
-<span class="skill-tag expert text-[10px]">Expert</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">OTDR Testing & Analysis</span>
-<span class="skill-tag expert text-[10px]">Expert</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">GPON / FTTx Deployment</span>
-<span class="skill-tag expert text-[10px]">Expert</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Structured Cabling (Cat6/Fiber)</span>
-<span class="skill-tag expert text-[10px]">Expert</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Patch Panel & Rack Installation</span>
-<span class="skill-tag expert text-[10px]">Expert</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Cable Management & ODF</span>
-<span class="skill-tag expert text-[10px]">Expert</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Fluke DSX Certification</span>
-<span class="skill-tag advanced text-[10px]">Advanced</span>
-</div>
-</div>
-</div>
-</div>
-<div data-aos="fade-up" data-aos-delay="100">
-<div class="glass rounded-2xl p-6 border border-secondary/15 h-full">
-<div class="flex items-center gap-3 mb-5">
-<div class="w-10 h-10 rounded-xl bg-secondary/15 flex items-center justify-center">
-<i class="fas fa-building text-secondary"></i>
-</div>
-<div>
-<h3 class="font-bold">Building & Data Center</h3>
-<div class="text-[10px] text-secondary font-mono">Layer 1-2 &middot; Advanced Level</div>
-</div>
-</div>
-<div class="space-y-3">
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Johnson Controls BMS</span>
-<span class="skill-tag advanced text-[10px]">Advanced</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Honeywell BMS Devices</span>
-<span class="skill-tag advanced text-[10px]">Advanced</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">CCTV (IP/Analog) & NVR/DVR</span>
-<span class="skill-tag advanced text-[10px]">Advanced</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Fire Alarm (NFPA Compliant)</span>
-<span class="skill-tag advanced text-[10px]">Advanced</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Access Control Systems</span>
-<span class="skill-tag advanced text-[10px]">Advanced</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Server Room Installation</span>
-<span class="skill-tag advanced text-[10px]">Advanced</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Data Center Infrastructure</span>
-<span class="skill-tag advanced text-[10px]">Advanced</span>
-</div>
-</div>
-</div>
-</div>
-<div data-aos="fade-up" data-aos-delay="200">
-<div class="glass rounded-2xl p-6 border border-accent/15 h-full">
-<div class="flex items-center gap-3 mb-5">
-<div class="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center">
-<i class="fas fa-network-wired text-accent"></i>
-</div>
-<div>
-<h3 class="font-bold">Enterprise Networking</h3>
-<div class="text-[10px] text-accent font-mono">Layer 3+ &middot; Growing</div>
-</div>
-</div>
-<div class="space-y-3">
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Routing & Switching</span>
-<span class="skill-tag intermediate text-[10px]">Intermediate</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">TCP/IP, IPv4 & IPv6</span>
-<span class="skill-tag intermediate text-[10px]">Intermediate</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">VLANs & Inter-VLAN Routing</span>
-<span class="skill-tag intermediate text-[10px]">Intermediate</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">OSPF & EIGRP</span>
-<span class="skill-tag learning text-[10px]">Learning</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">NAT, ACLs, DHCP, DNS</span>
-<span class="skill-tag intermediate text-[10px]">Intermediate</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Network Troubleshooting</span>
-<span class="skill-tag intermediate text-[10px]">Intermediate</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Wireless Networking</span>
-<span class="skill-tag learning text-[10px]">Learning</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Cisco Packet Tracer</span>
-<span class="skill-tag intermediate text-[10px]">Intermediate</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Networking Fundamentals</span>
-<span class="skill-tag intermediate text-[10px]">Intermediate</span>
-</div>
-<div class="flex items-center justify-between p-2.5 rounded-lg bg-white/[0.03]">
-<span class="text-sm">Subnetting</span>
-<span class="skill-tag intermediate text-[10px]">Intermediate</span>
-</div>
-</div>
-<div class="mt-4 p-3 rounded-lg bg-accent/5 border border-accent/10">
-<div class="flex items-center gap-2">
-<i class="fas fa-graduation-cap text-accent text-xs"></i>
-<span class="text-xs text-accent font-medium">CCNA in Progress</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-8 grid md:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="300">
-<div class="glass rounded-2xl p-6 border border-white/10">
-<div class="flex items-center gap-3 mb-4">
-<div class="w-10 h-10 rounded-xl bg-blue-500/15 flex items-center justify-center">
-<i class="fas fa-laptop-code text-blue-400"></i>
-</div>
-<div>
-<h3 class="font-bold">IT Support & Systems</h3>
-<div class="text-[10px] text-blue-400 font-mono">Cross-Functional</div>
-</div>
-</div>
-<div class="flex flex-wrap gap-2">
-<span class="skill-tag advanced text-xs">Computer Hardware</span>
-<span class="skill-tag advanced text-xs">Software Support</span>
-<span class="skill-tag intermediate text-xs">Windows Server</span>
-<span class="skill-tag intermediate text-xs">Active Directory</span>
-<span class="skill-tag intermediate text-xs">Linux Basics</span>
-<span class="skill-tag intermediate text-xs">VMware</span>
-<span class="skill-tag intermediate text-xs">Virtualization</span>
-<span class="skill-tag learning text-xs">Python</span>
-</div>
-</div>
-<div class="glass rounded-2xl p-6 border border-white/10">
-<div class="flex items-center gap-3 mb-4">
-<div class="w-10 h-10 rounded-xl bg-danger/15 flex items-center justify-center">
-<i class="fas fa-shield-alt text-danger"></i>
-</div>
-<div>
-<h3 class="font-bold">Security & Documentation</h3>
-<div class="text-[10px] text-danger font-mono">Foundation Level</div>
-</div>
-</div>
-<div class="flex flex-wrap gap-2">
-<span class="skill-tag intermediate text-xs">Cybersecurity Foundations</span>
-<span class="skill-tag intermediate text-xs">Network Security Basics</span>
-<span class="skill-tag intermediate text-xs">Firewall Concepts</span>
-<span class="skill-tag intermediate text-xs">VPN Basics</span>
-<span class="skill-tag advanced text-xs">Fluke Reports</span>
-<span class="skill-tag advanced text-xs">SOP Documentation</span>
-<span class="skill-tag intermediate text-xs">Network Monitoring</span>
-<span class="skill-tag learning text-xs">Cloud Networking</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- EXPERIENCE SECTION -->
-<section id="experience" class="py-24 bg-dark/30">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16" data-aos="fade-up">
-<div class="section-label bg-secondary/10 border border-secondary/20 text-secondary mb-6 mx-auto">
-<i class="fas fa-briefcase"></i> Professional Experience
-</div>
-<h2 class="text-3xl sm:text-4xl font-black mb-4">Building Infrastructure <span class="gradient-text">Across Two Countries</span></h2>
-<p class="text-slate-400 max-w-2xl mx-auto"> A progressive career from telecom field operations to enterprise building systems, with consistent growth in technical scope and project complexity. </p>
-</div>
-<div class="relative">
-<div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent"></div>
-
-<div class="relative flex flex-col md:flex-row items-start gap-8 mb-16" data-aos="fade-right">
-<div class="md:w-1/2 md:text-right md:pr-12">
-<div class="glass rounded-2xl p-6 border border-primary/20 hover:border-primary/40 transition glass-hover timeline-card timeline-left">
-<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider mb-3">
-          <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Current Role
+    <!-- Dark gradient overlay for text readability on left side -->
+    <div class="absolute inset-0 z-[1]" style="background: linear-gradient(to right, rgba(10,22,40,0.98) 0%, rgba(10,22,40,0.94) 28%, rgba(10,22,40,0.78) 48%, rgba(10,22,40,0.30) 68%, rgba(10,22,40,0.06) 82%, transparent 100%);"></div>
+    <div class="circuit-h w-64 top-1/4 left-0 opacity-30"></div>
+    <div class="circuit-h w-48 top-3/4 right-0 opacity-20"></div>
+    <div class="circuit-v h-32 top-20 left-1/4 opacity-20"></div>
+    <div class="circuit-v h-48 bottom-20 right-1/3 opacity-25"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="animate-slide-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-tech-cyan/20 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-tech-cyan animate-pulse"></span>
+                    <span class="text-tech-cyan text-sm font-medium">Available for Opportunities in KSA & GCC</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
+                    Muhammad<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-tech-cyan to-tech-blue">Mueen</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 font-medium mb-2">Network Infrastructure Specialist</p>
+                <p class="text-slate-400 mb-8 max-w-lg">Fiber Optics <span class="text-tech-cyan/60">|</span> Telecom <span class="text-tech-cyan/60">|</span> Structured Cabling <span class="text-tech-cyan/60">|</span> ELV Systems</p>
+                <p class="text-slate-400 text-base leading-relaxed mb-10 max-w-xl">
+                    5+ years of hands-on experience deploying enterprise network infrastructure, fiber optic networks, GPON/FTTx systems, and low-voltage solutions across <span class="text-white font-medium">Saudi Arabia</span> and <span class="text-white font-medium">Pakistan</span>.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-12">
+                    <a href="#contact" class="btn-primary px-8 py-3.5 rounded-xl text-base font-semibold inline-flex items-center gap-2"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                    <a href="#experience" class="btn-outline px-8 py-3.5 rounded-xl text-base font-semibold inline-flex items-center gap-2"><i class="fas fa-briefcase"></i> View Experience</a>
+                    <a href="https://www.linkedin.com/in/muhammad-mueen-14513b314" target="_blank" rel="noopener" class="btn-outline px-5 py-3.5 rounded-xl text-base inline-flex items-center gap-2" title="LinkedIn Profile"><i class="fab fa-linkedin text-lg"></i></a>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-white/10">
+                    <div><div class="stat-number text-3xl font-bold">5+</div><div class="text-slate-400 text-sm mt-1">Years Experience</div></div>
+                    <div><div class="stat-number text-3xl font-bold">500+</div><div class="text-slate-400 text-sm mt-1">Fiber Deployments</div></div>
+                    <div><div class="stat-number text-3xl font-bold">200+</div><div class="text-slate-400 text-sm mt-1">CCTV Systems</div></div>
+                    <div><div class="stat-number text-3xl font-bold">2</div><div class="text-slate-400 text-sm mt-1">Countries</div></div>
+                </div>
+            </div>
+            <div class="hidden lg:block"></div>
         </div>
-        <h3 class="font-bold text-lg mb-1">Network Infrastructure & Low-Voltage Field Technician</h3>
-        <p class="text-primary font-medium text-sm mb-1">STS - Jeddah</p>
-        <p class="text-slate-500 text-xs mb-4 font-mono">Jeddah, KSA &middot; May 2024 - Present</p>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <a href="#about" class="text-slate-500 hover:text-tech-cyan transition-colors"><i class="fas fa-chevron-down text-xl"></i></a>
+    </div>
+</section>
 
-        <div class="space-y-5">
-          <div class="p-4 rounded-xl bg-white/[0.03] border border-white/5">
-            <h4 class="font-semibold text-sm text-primary mb-2"><i class="fas fa-hospital mr-1.5"></i> Project 1 — Magrabi Hospital | Jeddah, Saudi Arabia</h4>
-            <p class="text-xs text-slate-400 mb-2 font-medium">Network Infrastructure & Security Systems Deployment</p>
-            <ul class="text-sm text-slate-300 space-y-1.5">
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Delivered end-to-end <strong class="text-slate-200">structured cabling infrastructure</strong> across multiple hospital floors, including <strong class="text-slate-200">Cat6 copper and fiber optic backbone</strong> installation, routing, termination, and testing.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Installed and terminated network connections to <strong class="text-slate-200">communication racks, patch panels, and network outlets</strong>, providing the physical infrastructure for the hospital's LAN.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Performed <strong class="text-slate-200">Fluke DSX cable certification</strong>, achieving a <strong class="text-slate-200">zero-fault handover</strong> and ensuring compliance with structured cabling standards.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Deployed the hospital's <strong class="text-slate-200">IP CCTV infrastructure</strong>, including camera installation, structured cabling, IP addressing, and NVR configuration for centralized surveillance.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Installed and commissioned the <strong class="text-slate-200">Nurse Call System</strong>, completing cable routing, termination, and connectivity to support reliable real-time communication across the facility.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Worked closely with engineers and project teams to deliver a stable, high-quality network infrastructure within project deadlines.</span>
-              </li>
-            </ul>
-          </div>
+<section id="about" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-5 gap-12 items-start">
+            <div class="lg:col-span-2 reveal">
+                <span class="text-tech-blue font-semibold text-sm tracking-wider uppercase">About Me</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-3 mb-6">Professional Summary</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full"></div>
+            </div>
+            <div class="lg:col-span-3 reveal reveal-delay-1">
+                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                    Network Infrastructure and Low-Voltage Technician with <strong class="text-navy-900">5+ years of hands-on experience</strong> in fiber optic networks, GPON/FTTx, structured cabling, CCTV, network infrastructure, and low-voltage systems across <strong class="text-navy-900">Saudi Arabia and Pakistan</strong>.
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    Experienced in fiber installation, cable pulling, fusion splicing, OTDR/OPM testing, Cat6 structured cabling, patch panel termination, Fluke certification, IP CCTV, NVR configuration, and network troubleshooting. Currently working on enterprise low-voltage, BMS and network infrastructure projects in <strong class="text-navy-900">Jeddah, Saudi Arabia</strong>.
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    Currently preparing for <strong class="text-navy-900">CCNA certification</strong> and developing advanced networking knowledge in routing, switching and network infrastructure, with the long-term goal of progressing into a <strong class="text-navy-900">Network Engineer</strong> role.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <span class="px-4 py-2 bg-navy-900 text-white rounded-lg text-sm font-medium"><i class="fas fa-map-marker-alt mr-2 text-tech-cyan"></i>Jeddah, Saudi Arabia</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium"><i class="fas fa-language mr-2 text-tech-blue"></i>English (Professional)</span>
+                    <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium"><i class="fas fa-language mr-2 text-tech-blue"></i>Arabic (Learning)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-          <div class="p-4 rounded-xl bg-white/[0.03] border border-white/5">
-            <h4 class="font-semibold text-sm text-primary mb-2"><i class="fas fa-hotel mr-1.5"></i> Project 2 — Four Seasons Hotel & Resort | Jeddah, Saudi Arabia <span class="text-[10px] text-accent font-normal">(Current)</span></h4>
-            <p class="text-xs text-slate-400 mb-2 font-medium">Building Automation Network (BMS) & Enterprise Low-Voltage Infrastructure</p>
-            <ul class="text-sm text-slate-300 space-y-1.5">
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Deploying the <strong class="text-slate-200">Building Management System (BMS) network infrastructure</strong> by installing, routing, glanding, and terminating communication cables according to approved engineering drawings.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Installing and integrating <strong class="text-slate-200">Johnson Controls</strong> and <strong class="text-slate-200">Honeywell</strong> BMS controllers, sensors, actuators, thermostats, VAV, and FCU devices into the building automation network.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Performing structured cable termination, labeling, and connectivity verification in accordance with project standards and I/O schedules.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Supporting deployment of an <strong class="text-slate-200">NFPA-compliant Fire Alarm System</strong>, including detectors, sounders, interface modules, and control panel network connectivity.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Coordinating daily with MEP engineers, supervisors, and multidisciplinary teams to ensure accurate installation and on-time project delivery.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fas fa-chevron-right text-primary text-[8px] mt-1.5"></i>
-                <span>Contributing to the development of a reliable, scalable, and well-documented low-voltage infrastructure for a world-class hospitality facility.</span>
-              </li>
-            </ul>
-          </div>
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<section id="expertise" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+            <span class="text-tech-blue font-semibold text-sm tracking-wider uppercase">Capabilities</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-3 mb-4">Core Technical Expertise</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">Specialized skills in network infrastructure, fiber optics, and low-voltage systems deployment.</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mx-auto mt-6"></div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="tech-card rounded-2xl p-6 reveal">
+                <div class="icon-wrap w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-circle-nodes"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">Fiber Optics</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Installation, cable pulling, routing, termination and fusion splicing for enterprise networks.</p>
+            </div>
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-1">
+                <div class="icon-wrap w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-tower-broadcast"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">GPON / FTTx</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Network deployment and last-mile connectivity with ONT/ONU configuration and provisioning.</p>
+            </div>
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-2">
+                <div class="icon-wrap w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-ethernet"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">Structured Cabling</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Cat6 network cabling, patch panel termination, network racks and outlet installation.</p>
+            </div>
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-3">
+                <div class="icon-wrap w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-wave-square"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">OTDR / OPM Testing</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Signal integrity verification, splice loss measurement, and fault diagnosis.</p>
+            </div>
+            <div class="tech-card rounded-2xl p-6 reveal">
+                <div class="icon-wrap w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-video"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">IP CCTV & NVR</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Camera installation, IP addressing, NVR/DVR configuration and remote access setup.</p>
+            </div>
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-1">
+                <div class="icon-wrap w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-building"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">BMS & ELV</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Honeywell & Johnson Controls integration, VAV/FCU, sensors, thermostats and fire alarm.</p>
+            </div>
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-2">
+                <div class="icon-wrap w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-screwdriver-wrench"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">Network Troubleshooting</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Router/ONT configuration, fault-ticket management, and connectivity issue resolution.</p>
+            </div>
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-3">
+                <div class="icon-wrap w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-clipboard-check"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">Fluke Certification</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">DSX cable certification, network connectivity testing, and zero-fault handover.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+            <span class="text-tech-blue font-semibold text-sm tracking-wider uppercase">Technical Proficiency</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-3 mb-4">Technical Skills</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">Comprehensive skill set across telecom, networking, security systems, and low-voltage infrastructure.</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mx-auto mt-6"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="reveal">
+                <div class="flex items-center gap-3 mb-5">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue"><i class="fas fa-broadcast-tower"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900">Telecom</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Fiber Optics</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">GPON</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">FTTx</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">OSP / Last-Mile Deployment</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Fusion Splicing</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">OTDR</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Optical Power Meter</span>
+                </div>
+            </div>
+            <div class="reveal reveal-delay-1">
+                <div class="flex items-center gap-3 mb-5">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue"><i class="fas fa-network-wired"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900">Networking</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">LAN Infrastructure</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Structured Cabling</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Cat6</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Patch Panels</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">ODF</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Network Racks</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">IP Addressing</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Subnetting</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Router Configuration</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Cisco Packet Tracer</span>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="flex items-center gap-3 mb-5">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900">Security Systems</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">IP CCTV</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Analog CCTV</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">NVR</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">DVR</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">PTZ Cameras</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Remote Access</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Network Integration</span>
+                </div>
+            </div>
+            <div class="reveal reveal-delay-1">
+                <div class="flex items-center gap-3 mb-5">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue"><i class="fas fa-bolt"></i></div>
+                    <h3 class="text-xl font-bold text-navy-900">ELV / Low Voltage</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">BMS Infrastructure</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Honeywell</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Johnson Controls</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Nurse Call Systems</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg text-sm text-slate-700 font-medium">Fire Alarm Network Infrastructure</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="py-24 bg-navy-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+        <div class="circuit-h w-full top-1/3"></div>
+        <div class="circuit-h w-full top-2/3"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16 reveal">
+            <span class="text-tech-cyan font-semibold text-sm tracking-wider uppercase">Career Journey</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3 mb-4">Professional Experience</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Hands-on field experience across telecom, network infrastructure, and low-voltage systems in KSA and Pakistan.</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mx-auto mt-6"></div>
         </div>
 
-        <div class="flex flex-wrap gap-1.5 mt-4 md:justify-end">
-          <span class="skill-tag advanced text-[10px] py-1 px-2">Johnson Controls</span>
-          <span class="skill-tag advanced text-[10px] py-1 px-2">Honeywell</span>
-          <span class="skill-tag advanced text-[10px] py-1 px-2">BMS</span>
-          <span class="skill-tag advanced text-[10px] py-1 px-2">Fire Alarm</span>
-          <span class="skill-tag advanced text-[10px] py-1 px-2">Fluke DSX</span>
-          <span class="skill-tag advanced text-[10px] py-1 px-2">CCTV</span>
-          <span class="skill-tag advanced text-[10px] py-1 px-2">Nurse Call</span>
+        <div class="timeline-container max-w-4xl mx-auto">
+            <div class="timeline-line"></div>
+
+            <!-- STS -->
+            <div class="relative mb-12 md:mb-0 reveal">
+                <div class="md:flex items-center justify-between">
+                    <div class="hidden md:block md:w-5/12 md:text-right md:pr-12"></div>
+                    <div class="timeline-dot absolute left-5 md:left-1/2 md:-translate-x-1/2 top-0"></div>
+                    <div class="md:w-5/12 md:pl-12 ml-12 md:ml-0">
+                        <div class="timeline-card rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="px-3 py-1 rounded-full bg-tech-cyan/10 text-tech-cyan text-xs font-semibold">Current</span>
+                                <span class="text-slate-400 text-sm">May 2024 – Present</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Network Infrastructure & Low-Voltage Field Technician</h3>
+                            <p class="text-tech-blue font-medium mb-1">STS</p>
+                            <p class="text-slate-400 text-sm mb-4"><i class="fas fa-map-marker-alt mr-1"></i> Jeddah, Saudi Arabia</p>
+
+                            <div class="mb-4 p-3 rounded-lg bg-white/5 border border-white/5">
+                                <p class="text-tech-cyan text-sm font-semibold mb-1"><i class="fas fa-project-diagram mr-2"></i>Projects</p>
+                                <p class="text-slate-300 text-sm">Four Seasons Hotel & Resort Jeddah, Magrabi Hospital Jeddah</p>
+                            </div>
+
+                            <ul class="space-y-2 text-slate-300 text-sm">
+                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs"></i><span>Deploying BMS network infrastructure through cable installation, routing and termination according to engineering drawings.</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs"></i><span>Installing and integrating Johnson Controls and Honeywell BMS controllers, VAV, FCU, sensors and thermostats.</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs"></i><span>Supporting NFPA-compliant Fire Alarm System deployment and associated network infrastructure.</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs"></i><span>Performing structured cable termination, labeling and connectivity verification according to project standards.</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs"></i><span>Coordinating with MEP engineers and project teams to deliver reliable low-voltage and automation systems.</span></li>
+                            </ul>
+
+                            <div class="mt-4 pt-4 border-t border-white/5">
+                                <p class="text-slate-400 text-sm font-semibold mb-2">Magrabi Hospital – Jeddah</p>
+                                <ul class="space-y-1 text-slate-400 text-sm">
+                                    <li class="flex items-start gap-2"><i class="fas fa-chevron-right text-tech-blue mt-1 text-xs"></i><span>Installed, terminated and tested Cat6 and fiber optic structured cabling across multiple hospital floors.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-chevron-right text-tech-blue mt-1 text-xs"></i><span>Built physical LAN infrastructure including network racks, patch panels and network outlets.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-chevron-right text-tech-blue mt-1 text-xs"></i><span>Performed Fluke DSX cable certification and achieved zero-fault handover for installed network cabling.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-chevron-right text-tech-blue mt-1 text-xs"></i><span>Installed and commissioned IP CCTV systems including camera installation, IP addressing and NVR configuration.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-chevron-right text-tech-blue mt-1 text-xs"></i><span>Installed and commissioned the Nurse Call System to support reliable communication throughout the hospital.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Esquare Global Partners -->
+            <div class="relative mb-12 md:mb-0 reveal">
+                <div class="md:flex items-center justify-between">
+                    <div class="md:w-5/12 md:pr-12 ml-12 md:ml-0 md:text-right">
+                        <div class="timeline-card rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-2 md:justify-end">
+                                <span class="text-slate-400 text-sm">May 2023 – January 2024</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1 md:text-right">Fiber Optic Technician / CPA – GPON / FTTx</h3>
+                            <p class="text-tech-blue font-medium mb-1 md:text-right">Esquare Global Partners</p>
+                            <p class="text-slate-400 text-sm mb-4 md:text-right"><i class="fas fa-map-marker-alt mr-1"></i> Bahawalpur, Pakistan</p>
+                            <ul class="space-y-2 text-slate-300 text-sm md:text-right">
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Delivered network connectivity for <strong class="text-white">500+</strong> commercial fiber optic deployments across residential and commercial areas under PTCL network expansion.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Planned and executed underground ducting, aerial routing and fiber fusion splicing to extend network infrastructure to subscriber premises.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Configured ONT/ONU devices for last-mile provisioning and IP-level connectivity setup.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Performed OTDR and OPM testing to verify splice loss, signal integrity and network handover quality.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Diagnosed and resolved network connectivity faults through fault-ticket management while minimizing service downtime.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Supported customer onboarding and fiber package activation during network expansion.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-dot absolute left-5 md:left-1/2 md:-translate-x-1/2 top-0"></div>
+                    <div class="hidden md:block md:w-5/12 md:pl-12"></div>
+                </div>
+            </div>
+
+            <!-- PTCL Internship -->
+            <div class="relative mb-12 md:mb-0 reveal">
+                <div class="md:flex items-center justify-between">
+                    <div class="hidden md:block md:w-5/12 md:text-right md:pr-12"></div>
+                    <div class="timeline-dot absolute left-5 md:left-1/2 md:-translate-x-1/2 top-0"></div>
+                    <div class="md:w-5/12 md:pl-12 ml-12 md:ml-0">
+                        <div class="timeline-card rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="px-3 py-1 rounded-full bg-tech-blue/10 text-tech-blue text-xs font-semibold">Internship</span>
+                                <span class="text-slate-400 text-sm">January 2023 – May 2023</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1">Fiber Optic Technician / CPA – GPON / FTTx</h3>
+                            <p class="text-tech-blue font-medium mb-1">PTCL Official</p>
+                            <p class="text-slate-400 text-sm mb-4"><i class="fas fa-map-marker-alt mr-1"></i> Bahawalpur, Punjab, Pakistan</p>
+                            <ul class="space-y-2 text-slate-300 text-sm">
+                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs"></i><span>Completed hands-on internship in fiber optic network operations and telecom infrastructure.</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs"></i><span>Learned fiber optic cable structure, patch panel architecture and end-to-end network component design.</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs"></i><span>Developed practical understanding of GPON architecture and network-based internet/data service delivery.</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs"></i><span>Assisted with fiber splicing workflows and telecom network infrastructure.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Haseeb Basit -->
+            <div class="relative reveal">
+                <div class="md:flex items-center justify-between">
+                    <div class="md:w-5/12 md:pr-12 ml-12 md:ml-0 md:text-right">
+                        <div class="timeline-card rounded-2xl p-6">
+                            <div class="flex items-center gap-2 mb-2 md:justify-end">
+                                <span class="text-slate-400 text-sm">March 2019 – September 2021</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-1 md:text-right">CCTV & IT Infrastructure Technician</h3>
+                            <p class="text-tech-blue font-medium mb-1 md:text-right">Haseeb Basit</p>
+                            <p class="text-slate-400 text-sm mb-4 md:text-right"><i class="fas fa-map-marker-alt mr-1"></i> Bahawalpur, Pakistan</p>
+                            <ul class="space-y-2 text-slate-300 text-sm md:text-right">
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Installed and commissioned <strong class="text-white">200+</strong> IP and analog CCTV surveillance systems for commercial clients.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Configured Dome, Bullet and PTZ cameras, NVR/DVR systems, IP addressing and remote access.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Integrated CCTV systems with network infrastructure for centralized monitoring.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Deployed fiber optic backbones including cable routing, fusion splicing, termination and testing.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Performed OTDR and OPM testing for fault identification, signal verification and preventive maintenance.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                                <li class="flex items-start gap-2 md:flex-row-reverse"><span>Installed and maintained fiber patch panels, ODFs, network racks and structured cabling.</span><i class="fas fa-check-circle text-tech-cyan mt-1 text-xs md:mt-1"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-dot absolute left-5 md:left-1/2 md:-translate-x-1/2 top-0"></div>
+                    <div class="hidden md:block md:w-5/12 md:pl-12"></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-<div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-primary border-4 border-darker z-10 transform -translate-x-1/2 mt-8"></div>
-<div class="md:w-1/2 md:pl-12 pt-2 hidden md:block">
-<div class="text-xs text-slate-600 font-mono">ENTERPRISE BMS</div>
-</div>
-</div>
-
-<div class="relative flex flex-col md:flex-row items-start gap-8 mb-16" data-aos="fade-left">
-<div class="md:w-1/2 md:pr-12 pt-2 hidden md:block text-right">
-<div class="text-xs text-slate-600 font-mono">TELECOM SCALE</div>
-</div>
-<div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-secondary border-4 border-darker z-10 transform -translate-x-1/2 mt-8"></div>
-<div class="md:w-1/2 md:pl-12">
-<div class="glass rounded-2xl p-6 border border-secondary/20 hover:border-secondary/40 transition glass-hover timeline-card timeline-right">
-<h3 class="font-bold text-lg mb-1">Fiber Optic Technician / CPA - GPON-FTTx</h3>
-<p class="text-secondary font-medium text-sm mb-1">Esquare Global Partners (PTCL Authorized)</p>
-<p class="text-slate-500 text-xs mb-4 font-mono">Bahawalpur, Pakistan (CTX Exchange) &middot; May 2023 - Jan 2024</p>
-<ul class="text-sm text-slate-300 space-y-2">
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-secondary text-[10px] mt-1.5"></i>
-<span>Delivered network connectivity for <strong class="text-slate-200">500+ commercial fiber optic deployments</strong> across residential and commercial zones as a <strong class="text-slate-200">Customer Premises Associate (CPA)</strong> under PTCL's network expansion.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-secondary text-[10px] mt-1.5"></i>
-<span>End-to-end GPON/FTTx deployment: planned and executed underground ducting, aerial routing, and fusion splicing to extend network infrastructure to subscriber premises.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-secondary text-[10px] mt-1.5"></i>
-<span>Configured ONT/ONU devices for last-mile network provisioning, <strong class="text-slate-200">managing IP-level connectivity setup</strong> for each subscriber.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-secondary text-[10px] mt-1.5"></i>
-<span>Conducted OTDR and OPM testing on every deployment to verify splice loss and signal integrity, ensuring reliable network handovers.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-secondary text-[10px] mt-1.5"></i>
-<span><strong class="text-slate-200">Diagnosed and resolved network connectivity faults</strong> via fault-ticket management, restoring subscriber service with minimal downtime.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-secondary text-[10px] mt-1.5"></i>
-<span>Contributed to network subscriber growth through direct customer onboarding and fiber package activation during expansion.</span>
-</li>
-</ul>
-<div class="flex flex-wrap gap-1.5 mt-4">
-<span class="skill-tag expert text-[10px] py-1 px-2">GPON</span>
-<span class="skill-tag expert text-[10px] py-1 px-2">FTTx</span>
-<span class="skill-tag expert text-[10px] py-1 px-2">Fusion Splicing</span>
-<span class="skill-tag expert text-[10px] py-1 px-2">OTDR</span>
-</div>
-</div>
-</div>
-</div>
-
-<div class="relative flex flex-col md:flex-row items-start gap-8 mb-16" data-aos="fade-right">
-<div class="md:w-1/2 md:text-right md:pr-12">
-<div class="glass rounded-2xl p-6 border border-amber-400/20 hover:border-amber-400/40 transition glass-hover timeline-card timeline-left">
-<h3 class="font-bold text-lg mb-1">Fiber Optic Technician / CPA - GPON-FTTx (Internship)</h3>
-<p class="text-amber-400 font-medium text-sm mb-1">PTCL Official</p>
-<p class="text-slate-500 text-xs mb-4 font-mono">Bahawalpur, Pakistan &middot; Jan 2023 - May 2023</p>
-<ul class="text-sm text-slate-300 space-y-2">
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-amber-400 text-[10px] mt-1.5"></i>
-<span>Completed a <strong class="text-slate-200">hands-on internship</strong> in fiber optic network operations and telecom network infrastructure, building foundational networking knowledge that led directly to a full-time Fiber Optic Technician role.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-amber-400 text-[10px] mt-1.5"></i>
-<span>Learned fiber optic cable structure, <strong class="text-slate-200">patch panel architecture</strong>, and end-to-end network component design.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-amber-400 text-[10px] mt-1.5"></i>
-<span>Gained understanding of <strong class="text-slate-200">GPON architecture</strong> and network-based internet/data service delivery.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-amber-400 text-[10px] mt-1.5"></i>
-<span>Studied <strong class="text-slate-200">power distribution concepts</strong> within telecom network infrastructure and device powering across the network.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-amber-400 text-[10px] mt-1.5"></i>
-<span>Observed and assisted with <strong class="text-slate-200">core network field operations</strong>, including fiber splicing workflows and network infrastructure deployment.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-amber-400 text-[10px] mt-1.5"></i>
-<span>Developed professional workplace conduct within a structured corporate network operations environment and built relationships with senior technicians that enabled a smooth transition into a full-time role.</span>
-</li>
-</ul>
-<div class="flex flex-wrap gap-1.5 mt-4 md:justify-end">
-<span class="skill-tag intermediate text-[10px] py-1 px-2">GPON Architecture</span>
-<span class="skill-tag intermediate text-[10px] py-1 px-2">Patch Panels</span>
-<span class="skill-tag intermediate text-[10px] py-1 px-2">Field Operations</span>
-</div>
-</div>
-</div>
-<div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-amber-400 border-4 border-darker z-10 transform -translate-x-1/2 mt-8"></div>
-<div class="md:w-1/2 md:pl-12 pt-2 hidden md:block">
-<div class="text-xs text-slate-600 font-mono">FOUNDATION</div>
-</div>
-</div>
-
-<div class="relative flex flex-col md:flex-row items-start gap-8" data-aos="fade-left">
-<div class="md:w-1/2 md:pr-12 pt-2 hidden md:block text-right">
-<div class="text-xs text-slate-600 font-mono">IT INFRASTRUCTURE</div>
-</div>
-<div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-purple-400 border-4 border-darker z-10 transform -translate-x-1/2 mt-8"></div>
-<div class="md:w-1/2 md:pl-12">
-<div class="glass rounded-2xl p-6 border border-purple-400/20 hover:border-purple-400/40 transition glass-hover timeline-card timeline-right">
-<h3 class="font-bold text-lg mb-1">CCTV, Data Center & IT Infrastructure Technician</h3>
-<p class="text-purple-400 font-medium text-sm mb-1">Haseeb Basit</p>
-<p class="text-slate-500 text-xs mb-4 font-mono">Bahawalpur, Pakistan &middot; Mar 2019 - Sep 2021</p>
-<ul class="text-sm text-slate-300 space-y-2">
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-purple-400 text-[10px] mt-1.5"></i>
-<span>Deployed <strong class="text-slate-200">200+ end-to-end IP and Analog CCTV network systems</strong> for commercial clients — Dome, Bullet, and PTZ cameras.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-purple-400 text-[10px] mt-1.5"></i>
-<span>Configured NVR/DVR systems, <strong class="text-slate-200">IP addressing, remote access setup</strong>, and network integration for centralized monitoring.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-purple-400 text-[10px] mt-1.5"></i>
-<span>Built <strong class="text-slate-200">fiber optic backbone infrastructure</strong> for CCTV networks: cable routing, fusion splicing, termination, and comprehensive network testing per industry standards.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-purple-400 text-[10px] mt-1.5"></i>
-<span>Performed OTDR and optical power meter (OPM) testing for fault identification, signal verification, and preventive network maintenance — minimizing downtime and ensuring link reliability.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-purple-400 text-[10px] mt-1.5"></i>
-<span>Installed and managed fiber patch panels, ODFs, network racks, and structured network cabling infrastructure.</span>
-</li>
-<li class="flex items-start gap-2">
-<i class="fas fa-chevron-right text-purple-400 text-[10px] mt-1.5"></i>
-<span>Maintained <strong class="text-slate-200">network quality benchmarks</strong> for efficient ongoing maintenance and future scalability.</span>
-</li>
-</ul>
-<div class="flex flex-wrap gap-1.5 mt-4">
-<span class="skill-tag advanced text-[10px] py-1 px-2">CCTV</span>
-<span class="skill-tag advanced text-[10px] py-1 px-2">NVR/DVR</span>
-<span class="skill-tag expert text-[10px] py-1 px-2">Fiber Backbone</span>
-<span class="skill-tag advanced text-[10px] py-1 px-2">Rack Install</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="py-24">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16" data-aos="fade-up">
-<div class="section-label bg-primary/10 border border-primary/20 text-primary mb-6 mx-auto">
-<i class="fas fa-project-diagram"></i> Featured Projects
-</div>
-<h2 class="text-3xl sm:text-4xl font-black mb-4">Enterprise Infrastructure <span class="gradient-text">Delivered</span></h2>
-<p class="text-slate-400 max-w-2xl mx-auto"> Key projects across healthcare, hospitality, and telecom sectors demonstrating end-to-end infrastructure deployment capability. </p>
-</div>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="project-card glass rounded-2xl overflow-hidden border border-white/10" data-aos="fade-up" data-aos-delay="0">
-<div class="h-52 bg-gradient-to-br from-primary/15 to-secondary/10 flex items-center justify-center relative overflow-hidden group">
-<i class="fas fa-hospital text-7xl text-primary/20 group-hover:scale-110 transition duration-500"></i>
-<div class="project-overlay absolute inset-0 bg-gradient-to-t from-darker via-darker/80 to-transparent flex items-end p-6">
-<div>
-<div class="text-xs text-primary font-mono mb-1">HEALTHCARE - JEDDAH</div>
-<div class="font-bold">Magrabi Hospital</div>
-</div>
-</div>
-</div>
-<div class="p-6">
-<div class="flex items-center gap-2 mb-3">
-<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold">STS</span>
-<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary text-[10px] font-bold">Healthcare</span>
-</div>
-<h3 class="font-bold text-lg mb-2">Structured Cabling & Security Infrastructure</h3>
-<p class="text-slate-400 text-sm mb-4 leading-relaxed"> Led end-to-end structured network cabling across all hospital floors — Cat6 and fiber backbone deployment, routing, and termination to network racks and patch panels, forming the <strong class="text-slate-200">physical layer for hospital-wide LAN connectivity</strong>. Delivered <strong class="text-slate-200">zero-fault handover</strong> after Fluke DSX certification testing. Deployed hospital-wide CCTV network — camera installation, cabling, <strong class="text-slate-200">IP addressing</strong>, NVR/DVR configuration for centralized monitoring. Commissioned Nurse Call System — cable pulling, wiring, and network termination for <strong class="text-slate-200">real-time alert transmission</strong>. </p>
-<div class="flex flex-wrap gap-1.5 mb-4">
-<span class="skill-tag expert text-[10px] py-1 px-2">Cat6 Cabling</span>
-<span class="skill-tag expert text-[10px] py-1 px-2">Fiber Optic</span>
-<span class="skill-tag advanced text-[10px] py-1 px-2">Fluke DSX</span>
-<span class="skill-tag advanced text-[10px] py-1 px-2">CCTV</span>
-<span class="skill-tag advanced text-[10px] py-1 px-2">Nurse Call</span>
-</div>
-<div class="flex items-center gap-2 text-xs text-slate-500">
-<i class="fas fa-map-marker-alt text-primary/50"></i>
-<span>Jeddah, KSA</span>
-<span class="mx-1">-</span>
-<i class="fas fa-calendar text-primary/50"></i>
-<span>2024</span>
-</div>
-</div>
-</div>
+<section id="projects" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+            <span class="text-tech-blue font-semibold text-sm tracking-wider uppercase">Portfolio</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-3 mb-4">Key Projects</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">Enterprise-level deployments across hospitality, healthcare, and telecom infrastructure.</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mx-auto mt-6"></div>
+        </div>
 
-<div class="project-card glass rounded-2xl overflow-hidden border border-white/10" data-aos="fade-up" data-aos-delay="100">
-<div class="h-52 bg-gradient-to-br from-secondary/15 to-emerald-400/10 flex items-center justify-center relative overflow-hidden group">
-<i class="fas fa-hotel text-7xl text-secondary/20 group-hover:scale-110 transition duration-500"></i>
-<div class="project-overlay absolute inset-0 bg-gradient-to-t from-darker via-darker/80 to-transparent flex items-end p-6">
-<div>
-<div class="text-xs text-secondary font-mono mb-1">HOSPITALITY - JEDDAH</div>
-<div class="font-bold">Four Seasons Hotel</div>
-</div>
-</div>
-</div>
-<div class="p-6">
-<div class="flex items-center gap-2 mb-3">
-<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary text-[10px] font-bold">Four Seasons</span>
-<span class="px-2 py-0.5 rounded-full bg-blue-400/10 text-blue-400 text-[10px] font-bold">Hospitality</span>
-</div>
-<h3 class="font-bold text-lg mb-2">BMS & Low-Voltage Systems</h3>
-<p class="text-slate-400 text-sm mb-4 leading-relaxed">
-Executed complete BMS low-voltage field work for a luxury hospitality facility. Installed and terminated Johnson Controls and Honeywell VAV/FCU devices. Deployed NFPA-compliant fire alarm systems across all floors with MEP team coordination.
-</p>
-<div class="flex flex-wrap gap-1.5 mb-4">
-<span class="skill-tag advanced text-[10px] py-1 px-2">Johnson Controls</span>
-<span class="skill-tag advanced text-[10px] py-1 px-2">Honeywell</span>
-<span class="skill-tag advanced text-[10px] py-1 px-2">Fire Alarm</span>
-<span class="skill-tag advanced text-[10px] py-1 px-2">VAV/FCU</span>
-<span class="skill-tag advanced text-[10px] py-1 px-2">NFPA</span>
-</div>
-<div class="flex items-center gap-2 text-xs text-slate-500">
-<i class="fas fa-map-marker-alt text-secondary/50"></i>
-<span>Jeddah, KSA</span>
-<span class="mx-1">-</span>
-<i class="fas fa-calendar text-secondary/50"></i>
-<span>2024 - Present</span>
-</div>
-</div>
-</div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="project-card rounded-2xl bg-navy-900 h-80 flex flex-col justify-end p-6 reveal">
+                <div class="project-overlay rounded-2xl"></div>
+                <div class="project-content">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="px-3 py-1 rounded-full bg-tech-cyan/20 text-tech-cyan text-xs font-semibold">Hospitality</span>
+                        <span class="px-3 py-1 rounded-full bg-tech-cyan/20 text-tech-cyan text-xs font-semibold">Current</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Four Seasons Hotel & Resort</h3>
+                    <p class="text-slate-300 text-sm mb-3">Jeddah, Saudi Arabia</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">BMS network infrastructure deployment with Johnson Controls and Honeywell integration. NFPA-compliant fire alarm systems, structured cabling, and low-voltage automation systems.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">BMS</span>
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">Fire Alarm</span>
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">Structured Cabling</span>
+                    </div>
+                </div>
+            </div>
 
-<div class="project-card glass rounded-2xl overflow-hidden border border-white/10" data-aos="fade-up" data-aos-delay="200">
-<div class="h-52 bg-gradient-to-br from-purple-500/15 to-pink-500/10 flex items-center justify-center relative overflow-hidden group">
-<i class="fas fa-broadcast-tower text-7xl text-purple-400/20 group-hover:scale-110 transition duration-500"></i>
-<div class="project-overlay absolute inset-0 bg-gradient-to-t from-darker via-darker/80 to-transparent flex items-end p-6">
-<div>
-<div class="text-xs text-purple-400 font-mono mb-1">TELECOM - PAKISTAN</div>
-<div class="font-bold">500+ Fiber Deployments</div>
-</div>
-</div>
-</div>
-<div class="p-6">
-<div class="flex items-center gap-2 mb-3">
-<span class="px-2 py-0.5 rounded-full bg-purple-400/10 text-purple-400 text-[10px] font-bold">PTCL</span>
-<span class="px-2 py-0.5 rounded-full bg-amber-400/10 text-amber-400 text-[10px] font-bold">Telecom</span>
-</div>
-<h3 class="font-bold text-lg mb-2">Large-Scale GPON/FTTx Deployment</h3>
-<p class="text-slate-400 text-sm mb-4 leading-relaxed">
-Delivered <strong class="text-slate-200">500+ commercial fiber optic projects</strong> across residential and commercial zones. End-to-end GPON/FTTx installation including underground ducting, aerial routing, fusion splicing, and ONT/ONU configuration with full OTDR and OPM testing.
-</p>
-<div class="flex flex-wrap gap-1.5 mb-4">
-<span class="skill-tag expert text-[10px] py-1 px-2">GPON</span>
-<span class="skill-tag expert text-[10px] py-1 px-2">FTTx</span>
-<span class="skill-tag expert text-[10px] py-1 px-2">Fusion Splicing</span>
-<span class="skill-tag expert text-[10px] py-1 px-2">OTDR</span>
-<span class="skill-tag expert text-[10px] py-1 px-2">ONT/ONU</span>
-</div>
-<div class="flex items-center gap-2 text-xs text-slate-500">
-<i class="fas fa-map-marker-alt text-purple-400/50"></i>
-<span>Bahawalpur, Pakistan</span>
-<span class="mx-1">-</span>
-<i class="fas fa-calendar text-purple-400/50"></i>
-<span>2023 - 2024</span>
-</div>
-</div>
-</div>
-</div>
-</div>
+            <div class="project-card rounded-2xl bg-navy-900 h-80 flex flex-col justify-end p-6 reveal reveal-delay-1">
+                <div class="project-overlay rounded-2xl"></div>
+                <div class="project-content">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="px-3 py-1 rounded-full bg-tech-blue/20 text-tech-blue text-xs font-semibold">Healthcare</span>
+                        <span class="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-semibold">Completed</span>
+                        <span class="text-slate-400 text-xs">2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Magrabi Hospital</h3>
+                    <p class="text-slate-300 text-sm mb-3">Jeddah, Saudi Arabia</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Multi-floor Cat6 and fiber optic structured cabling with zero-fault Fluke DSX certification. Physical LAN infrastructure, IP CCTV systems, and Nurse Call System commissioning.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">Cat6</span>
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">Fiber Optics</span>
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">IP CCTV</span>
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">Nurse Call</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card rounded-2xl bg-navy-900 h-80 flex flex-col justify-end p-6 reveal reveal-delay-2">
+                <div class="project-overlay rounded-2xl"></div>
+                <div class="project-content">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-xs font-semibold">Telecom</span>
+                        <span class="text-slate-400 text-xs">2023 – 2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">PTCL Network Expansion</h3>
+                    <p class="text-slate-300 text-sm mb-3">Bahawalpur, Pakistan</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Delivered 500+ commercial fiber optic deployments across residential and commercial areas. Underground ducting, aerial routing, ONT/ONU configuration, and OTDR/OPM testing.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">GPON</span>
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">FTTx</span>
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">Fusion Splicing</span>
+                        <span class="text-xs px-2 py-1 rounded bg-white/10 text-slate-300">OTDR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- CERTIFICATIONS SECTION -->
-<section id="certifications" class="py-24 bg-dark/30">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16" data-aos="fade-up">
-<div class="section-label bg-primary/10 border border-primary/20 text-primary mb-6 mx-auto">
-<i class="fas fa-award"></i> Credentials & Roadmap
-</div>
-<h2 class="text-3xl sm:text-4xl font-black mb-4">Certifications & <span class="gradient-text">Future Goals</span></h2>
-<p class="text-slate-400 max-w-2xl mx-auto"> Current credentials validate my foundation. Planned certifications align with my roadmap toward enterprise networking and network security. </p>
-</div>
+<section id="certifications" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16">
+            <div class="reveal">
+                <span class="text-tech-blue font-semibold text-sm tracking-wider uppercase">Academic Background</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-3 mb-8">Education</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mb-10"></div>
 
-<div class="mb-12">
-<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6 flex items-center gap-2">
-<i class="fas fa-check-circle text-primary"></i> Earned Credentials
-</h3>
-<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-    <!-- CCNA -->
-    <div class="cert-card glass rounded-xl p-4 border border-primary/20 text-center hover:border-primary/40 transition" data-aos="fade-up" data-aos-delay="0">
-      <div class="w-12 h-12 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center mb-2">
-        <i class="fas fa-network-wired text-primary text-xl"></i>
-      </div>
-      <h4 class="font-bold text-sm mb-0.5">CCNA</h4>
-      <p class="text-xs text-slate-500 mb-2">Cisco</p>
-      <div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-accent/10 text-accent text-[10px] font-bold mb-3">
-        <span class="w-1 h-1 rounded-full bg-accent animate-pulse"></span> In Progress
-      </div>
-      <div class="w-full h-28 rounded-lg bg-white/[0.03] border border-white/5 flex items-center justify-center mb-3">
-        <i class="fas fa-graduation-cap text-primary/30 text-3xl"></i>
-      </div>
-      <div class="flex gap-2 justify-center">
-        <span class="text-[10px] px-2 py-1 rounded-lg bg-white/5 border border-white/10 text-slate-500 cursor-not-allowed">Coming Soon</span>
-      </div>
+                <div class="space-y-8">
+                    <div class="flex gap-5">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-xl flex-shrink-0"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <h3 class="text-lg font-bold text-navy-900">Diploma of Associate Engineering (DAE) – Telecommunication</h3>
+                            <p class="text-tech-blue font-medium">Government College of Technology</p>
+                            <p class="text-slate-500 text-sm">Bahawalpur, Punjab, Pakistan</p>
+                            <p class="text-slate-400 text-sm mt-1">January 2019 – December 2021</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-xl flex-shrink-0"><i class="fas fa-school"></i></div>
+                        <div>
+                            <h3 class="text-lg font-bold text-navy-900">Matriculation – Computer Science</h3>
+                            <p class="text-tech-blue font-medium">Government High School Boys</p>
+                            <p class="text-slate-500 text-sm">Sama Satta, Punjab, Pakistan</p>
+                            <p class="text-slate-400 text-sm mt-1">January 2017 – December 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal reveal-delay-1">
+                <span class="text-tech-blue font-semibold text-sm tracking-wider uppercase">Professional Development</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-3 mb-8">Certifications</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mb-10"></div>
+
+                <div class="space-y-4">
+                    <div class="p-5 rounded-xl border border-slate-100 bg-slate-50 hover:border-tech-cyan/30 transition-colors">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center text-green-600 flex-shrink-0"><i class="fas fa-certificate text-xl"></i></div>
+                            <div>
+                                <h3 class="font-bold text-navy-900">Microsoft Security Copilot</h3>
+                                <p class="text-slate-500 text-sm">Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-xl border border-slate-100 bg-slate-50 hover:border-tech-cyan/30 transition-colors">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center text-green-600 flex-shrink-0"><i class="fas fa-shield-alt text-xl"></i></div>
+                            <div>
+                                <h3 class="font-bold text-navy-900">Cybersecurity Foundations</h3>
+                                <p class="text-slate-500 text-sm">Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-xl border border-slate-100 bg-slate-50 hover:border-tech-cyan/30 transition-colors">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center text-green-600 flex-shrink-0"><i class="fas fa-bolt text-xl"></i></div>
+                            <div>
+                                <h3 class="font-bold text-navy-900">General Electrical Technician</h3>
+                                <p class="text-slate-500 text-sm">Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-xl border border-amber-200 bg-amber-50/50 hover:border-amber-400/50 transition-colors">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-600 flex-shrink-0"><i class="fas fa-spinner fa-spin text-xl"></i></div>
+                            <div>
+                                <h3 class="font-bold text-navy-900">CCNA Preparation</h3>
+                                <p class="text-slate-600 text-sm">Networking, Cisco Packet Tracer and Subnetting</p>
+                                <span class="inline-block mt-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-semibold">In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Cybersecurity Foundations -->
-    <div class="cert-card glass rounded-xl p-4 border border-secondary/20 text-center hover:border-secondary/40 transition" data-aos="fade-up" data-aos-delay="100">
-      <div class="w-12 h-12 mx-auto rounded-2xl bg-secondary/10 flex items-center justify-center mb-2">
-        <i class="fas fa-shield-alt text-secondary text-xl"></i>
-      </div>
-      <h4 class="font-bold text-sm mb-0.5">Cybersecurity Foundations</h4>
-      <p class="text-xs text-slate-500 mb-2">Microsoft / LinkedIn Learning</p>
-      <div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-bold mb-3">
-        <i class="fas fa-check text-[8px]"></i> Completed May 2026
-      </div>
-      <div class="w-full h-28 rounded-lg border border-white/5 overflow-hidden mb-3 cursor-pointer group" onclick="openCertModal('cert-cybersecurity-foundations.png')">
-        <img src="cert-cybersecurity-foundations.png" alt="Cybersecurity Foundations Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-      </div>
-      <div class="flex gap-2 justify-center">
-        <button onclick="openCertModal('cert-cybersecurity-foundations.png')" class="text-[10px] px-2 py-1 rounded-lg bg-white/5 border border-white/10 hover:border-secondary/40 transition text-slate-400 hover:text-secondary">View Certificate</button>
-        <a href="cybersecurity-foundations-certificate.pdf" download class="text-[10px] px-2 py-1 rounded-lg bg-secondary/10 border border-secondary/20 hover:bg-secondary/20 transition text-secondary">Download PDF</a>
-      </div>
-    </div>
-
-    <!-- Security Copilot -->
-    <div class="cert-card glass rounded-xl p-4 border border-purple-400/20 text-center hover:border-purple-400/40 transition" data-aos="fade-up" data-aos-delay="200">
-      <div class="w-12 h-12 mx-auto rounded-2xl bg-purple-400/10 flex items-center justify-center mb-2">
-        <i class="fas fa-robot text-purple-400 text-xl"></i>
-      </div>
-      <h4 class="font-bold text-sm mb-0.5">Security Copilot</h4>
-      <p class="text-xs text-slate-500 mb-2">Microsoft / LinkedIn Learning</p>
-      <div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-bold mb-3">
-        <i class="fas fa-check text-[8px]"></i> Completed May 2026
-      </div>
-      <div class="w-full h-28 rounded-lg border border-white/5 overflow-hidden mb-3 cursor-pointer group" onclick="openCertModal('cert-security-copilot.png')">
-        <img src="cert-security-copilot.png" alt="Security Copilot Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-      </div>
-      <div class="flex gap-2 justify-center">
-        <button onclick="openCertModal('cert-security-copilot.png')" class="text-[10px] px-2 py-1 rounded-lg bg-white/5 border border-white/10 hover:border-purple-400/40 transition text-slate-400 hover:text-purple-400">View Certificate</button>
-        <a href="security-copilot-certificate.pdf" download class="text-[10px] px-2 py-1 rounded-lg bg-purple-400/10 border border-purple-400/20 hover:bg-purple-400/20 transition text-purple-400">Download PDF</a>
-      </div>
-    </div>
-
-    <!-- General Electrical Technician -->
-    <div class="cert-card glass rounded-xl p-4 border border-amber-400/20 text-center hover:border-amber-400/40 transition" data-aos="fade-up" data-aos-delay="300">
-      <div class="w-12 h-12 mx-auto rounded-2xl bg-amber-400/10 flex items-center justify-center mb-2">
-        <i class="fas fa-bolt text-amber-400 text-xl"></i>
-      </div>
-      <h4 class="font-bold text-sm mb-0.5">General Electrical Technician</h4>
-      <p class="text-xs text-slate-500 mb-2">VTI Bahawalpur</p>
-      <div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-bold mb-3">
-        <i class="fas fa-check text-[8px]"></i> Completed 2023
-      </div>
-      <div class="w-full h-28 rounded-lg border border-white/5 overflow-hidden mb-3 cursor-pointer group" onclick="openCertModal('cert-electrician.jpg')">
-        <img src="cert-electrician.jpg" alt="General Electrical Technician Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-      </div>
-      <div class="flex gap-2 justify-center">
-        <button onclick="openCertModal('cert-electrician.jpg')" class="text-[10px] px-2 py-1 rounded-lg bg-white/5 border border-white/10 hover:border-amber-400/40 transition text-slate-400 hover:text-amber-400">View Certificate</button>
-        <a href="general-electrical-technician-certificate.pdf" download class="text-[10px] px-2 py-1 rounded-lg bg-amber-400/10 border border-amber-400/20 hover:bg-amber-400/20 transition text-amber-400">Download PDF</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- CERTIFICATE MODAL -->
-<div id="cert-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4" onclick="closeCertModal()">
-  <div class="relative max-w-4xl w-full" onclick="event.stopPropagation()">
-    <button onclick="closeCertModal()" class="absolute -top-10 right-0 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition text-white">
-      <i class="fas fa-times"></i>
-    </button>
-    <img id="cert-modal-img" src="" alt="Certificate" class="w-full rounded-xl border border-white/10 shadow-2xl">
-  </div>
-</div>
-
-<script>
-function openCertModal(src) {
-  const modal = document.getElementById('cert-modal');
-  const img = document.getElementById('cert-modal-img');
-  img.src = src;
-  modal.classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-}
-function closeCertModal() {
-  const modal = document.getElementById('cert-modal');
-  modal.classList.add('hidden');
-  document.body.style.overflow = '';
-}
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeCertModal();
-});
-</script>
-
-<!-- EXPERIENCE LETTERS -->
-<div class="mb-12">
-<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6 flex items-center gap-2">
-<i class="fas fa-file-alt text-secondary"></i> Experience Letters
-</h3>
-<div class="grid sm:grid-cols-2 gap-4">
-<div class="cert-card glass rounded-xl p-5 border border-white/10 hover:border-primary/40 transition" data-aos="fade-up" data-aos-delay="0">
-<div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-broadcast-tower text-primary text-xl"></i>
-</div>
-<div class="flex-1">
-<h4 class="font-bold text-sm mb-1">Fiber Optic Technician</h4>
-<p class="text-xs text-slate-500 mb-2">Esquare Global Partners (PTCL Authorized)</p>
-<p class="text-xs text-slate-400 mb-3">Experience letter validating 500+ fiber deployments and GPON/FTTx expertise.</p>
-<div class="flex gap-2">
-<a href="experience-letter-fiber-optic.pdf" target="_blank" class="text-[10px] px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 hover:border-primary/40 transition text-slate-400">View Letter</a>
-<a href="experience-letter-fiber-optic.pdf" download class="text-[10px] px-3 py-1.5 rounded-lg bg-primary/10 border border-primary/20 hover:bg-primary/20 transition text-primary">Download PDF</a>
-</div>
-</div>
-</div>
-</div>
-
-<div class="cert-card glass rounded-xl p-5 border border-white/10 hover:border-secondary/40 transition" data-aos="fade-up" data-aos-delay="100">
-<div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-bolt text-secondary text-xl"></i>
-</div>
-<div class="flex-1">
-<h4 class="font-bold text-sm mb-1">Electrical Technician</h4>
-<p class="text-xs text-slate-500 mb-2">Haseeb Basit / VTI</p>
-<p class="text-xs text-slate-400 mb-3">Experience letter validating electrical technician work and infrastructure skills.</p>
-<div class="flex gap-2">
-<a href="experience-letter-electrical-technician.pdf" target="_blank" class="text-[10px] px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 hover:border-secondary/40 transition text-slate-400">View Letter</a>
-<a href="experience-letter-electrical-technician.pdf" download class="text-[10px] px-3 py-1.5 rounded-lg bg-secondary/10 border border-secondary/20 hover:bg-secondary/20 transition text-secondary">Download PDF</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div>
-<h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-6 flex items-center gap-2">
-<i class="fas fa-road text-accent"></i> Planned Certifications
-</h3>
-<div class="glass rounded-2xl p-6 border border-white/10">
-<div class="grid md:grid-cols-3 gap-6">
-<div>
-<div class="flex items-center gap-2 mb-3">
-<div class="w-8 h-8 rounded-lg bg-accent/15 flex items-center justify-center">
-<span class="text-accent text-xs font-bold">1</span>
-</div>
-<div>
-<div class="font-bold text-sm">Foundation</div>
-</div>
-</div>
-<div class="space-y-2">
-<div class="flex items-center gap-2 p-2 rounded-lg bg-white/[0.03]">
-<i class="fas fa-circle text-accent text-[6px]"></i>
-<span class="text-sm text-slate-300">Cisco CCNA</span>
-</div>
-<div class="flex items-center gap-2 p-2 rounded-lg bg-white/[0.03]">
-<i class="fas fa-circle text-slate-700 text-[6px]"></i>
-<span class="text-sm text-slate-500">CompTIA Network+</span>
-</div>
-</div>
-</div>
-
-<div>
-<div class="flex items-center gap-2 mb-3">
-<div class="w-8 h-8 rounded-lg bg-secondary/15 flex items-center justify-center">
-<span class="text-secondary text-xs font-bold">2</span>
-</div>
-<div>
-<div class="font-bold text-sm">Advanced Networking</div>
-</div>
-</div>
-<div class="space-y-2">
-<div class="flex items-center gap-2 p-2 rounded-lg bg-white/[0.03]">
-<i class="fas fa-circle text-slate-700 text-[6px]"></i>
-<span class="text-sm text-slate-500">Cisco CCNP Enterprise</span>
-</div>
-<div class="flex items-center gap-2 p-2 rounded-lg bg-white/[0.03]">
-<i class="fas fa-circle text-slate-700 text-[6px]"></i>
-<span class="text-sm text-slate-500">CompTIA Security+</span>
-</div>
-</div>
-</div>
-
-<div>
-<div class="flex items-center gap-2 mb-3">
-<div class="w-8 h-8 rounded-lg bg-danger/15 flex items-center justify-center">
-<span class="text-danger text-xs font-bold">3</span>
-</div>
-<div>
-<div class="font-bold text-sm">Security Specialization</div>
-</div>
-</div>
-<div class="space-y-2">
-<div class="flex items-center gap-2 p-2 rounded-lg bg-white/[0.03]">
-<i class="fas fa-circle text-slate-700 text-[6px]"></i>
-<span class="text-sm text-slate-500">Cisco CCNP Security</span>
-</div>
-<div class="flex items-center gap-2 p-2 rounded-lg bg-white/[0.03]">
-<i class="fas fa-circle text-slate-700 text-[6px]"></i>
-<span class="text-sm text-slate-500">Fortinet NSE 4 / Palo Alto</span>
-</div>
-<div class="flex items-center gap-2 p-2 rounded-lg bg-white/[0.03]">
-<i class="fas fa-circle text-slate-700 text-[6px]"></i>
-<span class="text-sm text-slate-500">AWS/Azure Cloud Networking</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 
-<!-- EDUCATION SECTION -->
-<section class="py-24">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16" data-aos="fade-up">
-<div class="section-label bg-secondary/10 border border-secondary/20 text-secondary mb-6 mx-auto">
-<i class="fas fa-graduation-cap"></i> Education
-</div>
-<h2 class="text-3xl sm:text-4xl font-black mb-4">Academic <span class="gradient-text">Background</span></h2>
-</div>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="glass rounded-xl p-6 border border-white/10 flex gap-4 hover:border-primary/30 transition" data-aos="fade-up" data-aos-delay="0">
-<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-university text-primary text-xl"></i>
-</div>
-<div>
-<h4 class="font-bold text-white">Associate Engineering in Telecommunication (DAE)</h4>
-<p class="text-sm text-slate-400">Government College of Technology</p>
-<p class="text-sm text-slate-500">Bahawalpur, Punjab, Pakistan</p>
-<p class="text-xs text-slate-600 mt-1 font-mono">Jan 2019 - Dec 2022</p>
-</div>
-</div>
+<section class="py-24 bg-navy-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+            <span class="text-tech-cyan font-semibold text-sm tracking-wider uppercase">Equipment</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3 mb-4">Tools & Technologies</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Professional-grade tools and technologies used for network testing, certification, and deployment.</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mx-auto mt-6"></div>
+        </div>
 
-<div class="glass rounded-xl p-6 border border-white/10 flex gap-4 hover:border-purple-400/30 transition" data-aos="fade-up" data-aos-delay="200">
-<div class="w-12 h-12 rounded-xl bg-purple-400/10 flex items-center justify-center flex-shrink-0">
-<i class="fas fa-laptop-code text-purple-400 text-xl"></i>
-</div>
-<div>
-<h4 class="font-bold text-white">Matric Computer Science</h4>
-<p class="text-sm text-slate-400">Government High School Boys</p>
-<p class="text-sm text-slate-500">Sama Satta, Pakistan</p>
-<p class="text-xs text-slate-600 mt-1 font-mono">Jan 2017 - Dec 2019</p>
-</div>
-</div>
-</div>
-</div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="tool-card rounded-2xl p-8 text-center reveal">
+                <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-cyan text-3xl mb-5"><i class="fas fa-clipboard-check"></i></div>
+                <h3 class="text-lg font-bold text-white mb-2">Fluke DSX</h3>
+                <p class="text-slate-400 text-sm">Cable Certification & Testing</p>
+            </div>
+            <div class="tool-card rounded-2xl p-8 text-center reveal reveal-delay-1">
+                <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-cyan text-3xl mb-5"><i class="fas fa-wave-square"></i></div>
+                <h3 class="text-lg font-bold text-white mb-2">OTDR</h3>
+                <p class="text-slate-400 text-sm">Optical Time Domain Reflectometer</p>
+            </div>
+            <div class="tool-card rounded-2xl p-8 text-center reveal reveal-delay-2">
+                <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-cyan text-3xl mb-5"><i class="fas fa-tachometer-alt"></i></div>
+                <h3 class="text-lg font-bold text-white mb-2">OPM</h3>
+                <p class="text-slate-400 text-sm">Optical Power Meter</p>
+            </div>
+            <div class="tool-card rounded-2xl p-8 text-center reveal reveal-delay-3">
+                <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-cyan text-3xl mb-5"><i class="fas fa-network-wired"></i></div>
+                <h3 class="text-lg font-bold text-white mb-2">Cisco Packet Tracer</h3>
+                <p class="text-slate-400 text-sm">Network Simulation & Design</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- CONTACT SECTION -->
-<section id="contact" class="py-24 bg-dark/30">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="grid lg:grid-cols-2 gap-12">
-<div data-aos="fade-right">
-<div class="section-label bg-primary/10 border border-primary/20 text-primary mb-6">
-<i class="fas fa-envelope"></i> Get in Touch
-</div>
-<h2 class="text-3xl sm:text-4xl font-black mb-4">Let's Build <span class="gradient-text">Infrastructure Together</span></h2>
-<p class="text-slate-400 mb-8 leading-relaxed"> I am actively seeking opportunities in <strong class="text-slate-200">telecom infrastructure, enterprise networking, BMS/ELV systems, and IT support</strong> across Saudi Arabia. Whether you are looking for a hands-on infrastructure specialist or a networking professional in development, I would love to discuss how I can contribute to your team. </p>
 
-<div class="space-y-4">
-<a href="https://wa.me/966537270792" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition group">
-<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition">
-<i class="fab fa-whatsapp text-primary text-xl"></i>
-</div>
-<div>
-<div class="text-sm text-slate-400">WhatsApp / Phone</div>
-<div class="font-semibold">+966 53 727 0792</div>
-</div>
-<i class="fas fa-external-link-alt text-slate-600 ml-auto text-xs"></i>
-</a>
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+            <span class="text-tech-blue font-semibold text-sm tracking-wider uppercase">Supplementary Capabilities</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-3 mb-4">Additional Skills</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">Digital and creative competencies that support professional productivity, documentation, and project communication.</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mx-auto mt-6"></div>
+        </div>
 
-<a href="mailto:muhammadmueenpk@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-secondary/50 transition group">
-<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition">
-<i class="fas fa-envelope text-secondary text-xl"></i>
-</div>
-<div class="flex-1 min-w-0">
-<div class="text-sm text-slate-400">Email</div>
-<div class="font-semibold text-sm truncate">muhammadmueenpk@gmail.com</div>
-</div>
-<button onclick="copyEmail()" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 hover:bg-secondary/10 hover:border-secondary/30 transition text-xs text-slate-400 hover:text-secondary flex items-center gap-1">
-<i class="fas fa-copy"></i> Copy
-</button>
-</a>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="tech-card rounded-2xl p-6 reveal">
+                <div class="icon-wrap w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500/10 to-purple-500/5 flex items-center justify-center text-violet-500 text-xl mb-4">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="text-base font-bold text-navy-900 mb-2">AI & Digital Tools</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">AI-assisted design, AI tools and AI-based productivity workflows for efficient project execution.</p>
+            </div>
 
-<a href="https://www.linkedin.com/in/muhammad-mueen-14513b314" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400/50 transition group">
-<div class="w-12 h-12 rounded-xl bg-blue-400/10 flex items-center justify-center group-hover:bg-blue-400/20 transition">
-<i class="fab fa-linkedin text-blue-400 text-xl"></i>
-</div>
-<div>
-<div class="text-sm text-slate-400">LinkedIn</div>
-<div class="font-semibold text-sm">linkedin.com/in/muhammad-mueen-14513b314</div>
-</div>
-<i class="fas fa-external-link-alt text-slate-600 ml-auto text-xs"></i>
-</a>
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-1">
+                <div class="icon-wrap w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500/10 to-amber-500/5 flex items-center justify-center text-orange-500 text-xl mb-4">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-base font-bold text-navy-900 mb-2">Web Development</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Website development, basic web design and website content management for technical documentation.</p>
+            </div>
 
-<div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
-<div class="w-12 h-12 rounded-xl bg-purple-400/10 flex items-center justify-center">
-<i class="fas fa-map-marker-alt text-purple-400 text-xl"></i>
-</div>
-<div>
-<div class="text-sm text-slate-400">Location</div>
-<div class="font-semibold">Jeddah, Makkah, Saudi Arabia</div>
-</div>
-</div>
-</div>
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-2">
+                <div class="icon-wrap w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500/10 to-rose-500/5 flex items-center justify-center text-pink-500 text-xl mb-4">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 class="text-base font-bold text-navy-900 mb-2">Graphic Design</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Graphic design, digital creatives, social media graphics and visual content creation.</p>
+            </div>
 
-<div class="mt-6 p-4 rounded-xl bg-primary/5 border border-primary/15">
-<div class="flex items-center gap-3">
-<div class="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
-<div>
-<div class="text-sm font-semibold text-primary">Available for Immediate Start</div>
-<div class="text-xs text-slate-500">Open to full-time & contract roles across KSA</div>
-</div>
-</div>
-</div>
-</div>
+            <div class="tech-card rounded-2xl p-6 reveal">
+                <div class="icon-wrap w-12 h-12 rounded-xl bg-gradient-to-br from-red-500/10 to-orange-500/5 flex items-center justify-center text-red-500 text-xl mb-4">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3 class="text-base font-bold text-navy-900 mb-2">Video Editing</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Video editing, short-form video production, basic motion and promotional content.</p>
+            </div>
 
-<div data-aos="fade-left" data-aos-delay="200">
-<div class="glass rounded-2xl p-6 border border-white/10">
-<h3 class="font-bold text-lg mb-4">Send a Message</h3>
-<form action="https://formspree.io/f/mwvddegg" method="POST" class="space-y-4">
-<div class="grid grid-cols-2 gap-4">
-<div>
-<label class="block text-sm text-slate-400 mb-1.5">Name</label>
-<input type="text" name="name" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:border-primary focus:outline-none transition text-sm" placeholder="Your Name" required>
-</div>
-<div>
-<label class="block text-sm text-slate-400 mb-1.5">Email</label>
-<input type="email" name="email" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:border-primary focus:outline-none transition text-sm" placeholder="your@email.com" required>
-</div>
-</div>
-<div>
-<label class="block text-sm text-slate-400 mb-1.5">Subject</label>
-<input type="text" name="subject" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:border-primary focus:outline-none transition text-sm" placeholder="Job Opportunity / Collaboration" required>
-</div>
-<div>
-<label class="block text-sm text-slate-400 mb-1.5">Message</label>
-<textarea name="message" rows="4" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:border-primary focus:outline-none transition text-sm resize-none" placeholder="Tell me about the opportunity..." required></textarea>
-</div>
-<button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-semibold hover:opacity-90 transition flex items-center justify-center gap-2">
-<i class="fas fa-paper-plane"></i> Send Message
-</button>
-</form>
-</div>
-</div>
-</div>
-</div>
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-1">
+                <div class="icon-wrap w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/10 to-cyan-500/5 flex items-center justify-center text-blue-500 text-xl mb-4">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3 class="text-base font-bold text-navy-900 mb-2">Digital Advertising</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Google Ads, online advertising concepts, campaign support and digital marketing.</p>
+            </div>
+
+            <div class="tech-card rounded-2xl p-6 reveal reveal-delay-2">
+                <div class="icon-wrap w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500/10 to-teal-500/5 flex items-center justify-center text-emerald-500 text-xl mb-4">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3 class="text-base font-bold text-navy-900 mb-2">Social Media Management</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Social media handling, content management, audience communication and professional public-facing social media support.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="py-10 border-t border-white/5">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="flex flex-col md:flex-row items-center justify-between gap-6">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-<i class="fas fa-network-wired text-white text-sm"></i>
-</div>
-<div>
-<span class="font-bold text-white">Muhammad Mueen</span>
-<div class="text-[10px] text-slate-500 font-mono">Telecom & Network Infrastructure</div>
-</div>
-</div>
+<div class="section-divider max-w-4xl mx-auto"></div>
+<section class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+            <span class="text-tech-blue font-semibold text-sm tracking-wider uppercase">Value Proposition</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-3 mb-4">Why Work With Me</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">A dedicated network infrastructure specialist delivering quality enterprise solutions with a commitment to excellence.</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mx-auto mt-6"></div>
+        </div>
 
-<div class="flex items-center gap-6 text-sm text-slate-500">
-<a href="#home" class="hover:text-primary transition">Home</a>
-<a href="#about" class="hover:text-primary transition">About</a>
-<a href="#services" class="hover:text-primary transition">Services</a>
-<a href="#skills" class="hover:text-primary transition">Skills</a>
-<a href="#experience" class="hover:text-primary transition">Experience</a>
-<a href="#contact" class="hover:text-primary transition">Contact</a>
-</div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:border-tech-cyan/20 hover:shadow-lg hover:shadow-tech-cyan/5 transition-all reveal">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-hard-hat"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">5+ Years Hands-On Experience</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Proven track record in the field across Saudi Arabia and Pakistan, from fiber splicing to enterprise BMS deployment.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:border-tech-cyan/20 hover:shadow-lg hover:shadow-tech-cyan/5 transition-all reveal reveal-delay-1">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-circle-nodes"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">Fiber Optics Specialist</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Expert in fusion splicing, OTDR/OPM testing, and GPON/FTTx deployment with 500+ successful installations.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:border-tech-cyan/20 hover:shadow-lg hover:shadow-tech-cyan/5 transition-all reveal reveal-delay-2">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-ethernet"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">Structured Cabling Expert</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Fluke DSX certified installations with zero-fault handover on critical healthcare and hospitality projects.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:border-tech-cyan/20 hover:shadow-lg hover:shadow-tech-cyan/5 transition-all reveal">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-bolt"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">ELV & BMS Systems</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Experience with Honeywell and Johnson Controls platforms, fire alarm networks, and nurse call systems.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:border-tech-cyan/20 hover:shadow-lg hover:shadow-tech-cyan/5 transition-all reveal reveal-delay-1">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-award"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">Quality & Safety Focused</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Committed to NFPA-compliant installations, proper labeling, testing, and commissioning to project standards.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:border-tech-cyan/20 hover:shadow-lg hover:shadow-tech-cyan/5 transition-all reveal reveal-delay-2">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/10 to-tech-blue/5 flex items-center justify-center text-tech-blue text-2xl mb-5"><i class="fas fa-globe"></i></div>
+                <h3 class="text-lg font-bold text-navy-900 mb-2">KSA & GCC Experience</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Currently based in Jeddah with active work on major Saudi projects. Open to full-time and contract roles across the GCC.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="flex items-center gap-3">
-<a href="https://www.linkedin.com/in/muhammad-mueen-14513b314" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-primary/15 transition group">
-<i class="fab fa-linkedin text-slate-400 group-hover:text-primary transition"></i>
-</a>
-<a href="https://wa.me/966537270792" target="_blank" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-secondary/15 transition group">
-<i class="fab fa-whatsapp text-slate-400 group-hover:text-secondary transition"></i>
-</a>
-<a href="mailto:muhammadmueenpk@gmail.com" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-blue-400/15 transition group">
-<i class="fas fa-envelope text-slate-400 group-hover:text-blue-400 transition"></i>
-</a>
-</div>
-</div>
-<div class="mt-8 pt-6 border-t border-white/5 text-center">
-<p class="text-xs text-slate-600">
-&copy; 2026 Muhammad Mueen. Telecom & Network Infrastructure Professional. Jeddah, KSA.
-</p>
-</div>
-</div>
+<section id="contact" class="py-24 bg-navy-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+        <div class="circuit-h w-full top-1/2"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16 reveal">
+            <span class="text-tech-cyan font-semibold text-sm tracking-wider uppercase">Get In Touch</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3 mb-4">Contact</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">Open to suitable full-time and contract opportunities in Saudi Arabia and the GCC region.</p>
+            <div class="w-20 h-1 bg-gradient-to-r from-tech-cyan to-tech-blue rounded-full mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6 mb-10">
+            <a href="tel:+966537270792" class="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-tech-cyan/30 hover:bg-white/10 transition-all reveal">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/20 to-tech-blue/10 flex items-center justify-center text-tech-cyan text-xl group-hover:scale-110 transition-transform"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <p class="text-slate-400 text-sm">Phone</p>
+                        <p class="text-white font-semibold text-lg">+966 53 727 0792</p>
+                    </div>
+                </div>
+            </a>
+            <a href="mailto:muhammadmueenpk@gmail.com" class="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-tech-cyan/30 hover:bg-white/10 transition-all reveal reveal-delay-1">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/20 to-tech-blue/10 flex items-center justify-center text-tech-cyan text-xl group-hover:scale-110 transition-transform"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <p class="text-slate-400 text-sm">Email</p>
+                        <p class="text-white font-semibold text-lg">muhammadmueenpk@gmail.com</p>
+                    </div>
+                </div>
+            </a>
+            <div class="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-tech-cyan/30 hover:bg-white/10 transition-all reveal">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/20 to-tech-blue/10 flex items-center justify-center text-tech-cyan text-xl"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <p class="text-slate-400 text-sm">Location</p>
+                        <p class="text-white font-semibold text-lg">Jeddah, Makkah, KSA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-tech-cyan/30 hover:bg-white/10 transition-all reveal reveal-delay-1">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-tech-cyan/20 to-tech-blue/10 flex items-center justify-center text-tech-cyan text-xl"><i class="fas fa-briefcase"></i></div>
+                    <div>
+                        <p class="text-slate-400 text-sm">Availability</p>
+                        <p class="text-white font-semibold text-lg">Full-time & Contract</p>
+                        <p class="text-slate-400 text-sm">KSA & GCC Region</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center reveal">
+            <p class="text-slate-500 text-sm mb-4"><a href="https://www.linkedin.com/in/muhammad-mueen-14513b314" target="_blank" rel="noopener" class="text-tech-cyan hover:underline"><i class="fab fa-linkedin mr-1"></i> linkedin.com/in/muhammad-mueen-14513b314</a></p>
+            <a href="tel:+966537270792" class="btn-primary px-10 py-4 rounded-xl text-lg font-semibold inline-flex items-center gap-3">
+                <i class="fas fa-phone-alt"></i> Call Me Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-navy-950 py-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-tech-cyan to-tech-blue flex items-center justify-center text-navy-900 font-bold">MM</div>
+                <div>
+                    <span class="text-white font-bold">Muhammad Mueen</span>
+                    <span class="block text-xs text-slate-500">Network Infrastructure Specialist</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#about" class="text-slate-400 hover:text-tech-cyan text-sm transition-colors">About</a>
+                <a href="#experience" class="text-slate-400 hover:text-tech-cyan text-sm transition-colors">Experience</a>
+                <a href="#projects" class="text-slate-400 hover:text-tech-cyan text-sm transition-colors">Projects</a>
+                <a href="#contact" class="text-slate-400 hover:text-tech-cyan text-sm transition-colors">Contact</a>
+            </div>
+            <p class="text-slate-600 text-sm"> Network Infrastructure Specialist. All rights reserved.</p>
+        </div>
+    </div>
 </footer>
 
-<!-- COPY TOAST -->
-<div id="copy-toast" class="copy-toast">
-<i class="fas fa-check-circle mr-2"></i> Email copied to clipboard!
-</div>
-
-<!-- SCRIPTS -->
 <script>
-// Typed.js for hero
-new Typed('#typed-hero', {
-strings: [
-'Fiber Optic & Structured Cabling Expert',
-'Data Center Infrastructure Specialist',
-'BMS & ELV Systems Professional',
-'CCNA Candidate - Enterprise Networking',
-'Future Network Security Engineer'
-],
-typeSpeed: 45,
-backSpeed: 25,
-backDelay: 2500,
-startDelay: 500,
-loop: true,
-showCursor: true,
-cursorChar: '|'
-});
+// Network Canvas Animation
+const canvas = document.getElementById('networkCanvas');
+const ctx = canvas.getContext('2d');
+let width, height;
+let nodes = [];
+let pulses = [];
+const isMobile = window.innerWidth < 768;
+const nodeCount = isMobile ? 10 : 18;
+const connectDist = 140;
+const pulseSpeed = 0.35;
 
-// AOS Animation
-AOS.init({
-duration: 800,
-once: true,
-offset: 80,
-easing: 'ease-out-cubic'
-});
+function resize() {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
 
-// Navbar scroll effect
-const navbar = document.getElementById('navbar');
+class Node {
+    constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 0.18;
+        this.vy = (Math.random() - 0.5) * 0.18;
+        this.radius = Math.random() * 0.8 + 0.3;
+        this.opacity = Math.random() * 0.12 + 0.06;
+    }
+    update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        if (this.x < -20 || this.x > width + 20) this.vx *= -1;
+        if (this.y < -20 || this.y > height + 20) this.vy *= -1;
+    }
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 212, 255, ${this.opacity})`;
+        ctx.fill();
+    }
+}
+
+class Pulse {
+    constructor(startNode, endNode) {
+        this.startNode = startNode;
+        this.endNode = endNode;
+        this.progress = 0;
+        this.speed = pulseSpeed + Math.random() * 0.25;
+        this.opacity = Math.random() * 0.35 + 0.25;
+        this.radius = Math.random() * 1.2 + 0.6;
+        this.alive = true;
+    }
+    update() {
+        this.progress += this.speed;
+        if (this.progress >= 1) {
+            this.alive = false;
+            return;
+        }
+        const sx = this.startNode.x;
+        const sy = this.startNode.y;
+        const ex = this.endNode.x;
+        const ey = this.endNode.y;
+        this.x = sx + (ex - sx) * this.progress;
+        this.y = sy + (ey - sy) * this.progress;
+    }
+    draw() {
+        if (!this.alive) return;
+        const fade = this.progress < 0.15 ? this.progress / 0.15 : (this.progress > 0.85 ? (1 - this.progress) / 0.15 : 1);
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 212, 255, ${this.opacity * fade})`;
+        ctx.fill();
+        // Soft glow behind pulse
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius * 3, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 212, 255, ${this.opacity * fade * 0.08})`;
+        ctx.fill();
+    }
+}
+
+for (let i = 0; i < nodeCount; i++) nodes.push(new Node());
+let pulses = [];
+let pulseTimer = 0;
+
+function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    // Draw connections first (behind everything)
+    for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+            const dx = nodes[i].x - nodes[j].x;
+            const dy = nodes[i].y - nodes[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < connectDist) {
+                ctx.beginPath();
+                ctx.moveTo(nodes[i].x, nodes[i].y);
+                ctx.lineTo(nodes[j].x, nodes[j].y);
+                ctx.strokeStyle = `rgba(0, 212, 255, ${0.035 * (1 - dist / connectDist)})`;
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+            }
+        }
+    }
+
+    // Update and draw nodes
+    nodes.forEach(n => { n.update(); n.draw(); });
+
+    // Spawn new pulses occasionally
+    pulseTimer++;
+    if (pulseTimer > 90 + Math.random() * 120) {
+        pulseTimer = 0;
+        const i = Math.floor(Math.random() * nodes.length);
+        let j = Math.floor(Math.random() * nodes.length);
+        while (j === i) j = Math.floor(Math.random() * nodes.length);
+        const dx = nodes[i].x - nodes[j].x;
+        const dy = nodes[i].y - nodes[j].y;
+        if (Math.sqrt(dx*dx + dy*dy) < connectDist * 1.3) {
+            pulses.push(new Pulse(nodes[i], nodes[j]));
+        }
+    }
+
+    // Update and draw pulses
+    pulses = pulses.filter(p => p.alive);
+    pulses.forEach(p => { p.update(); p.draw(); });
+
+    requestAnimationFrame(animate);
+}
+animate();
+
+// Scroll Reveal
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, { threshold: 0.1 });
+revealElements.forEach(el => revealObserver.observe(el));
+
+// Navigation Active State
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
 window.addEventListener('scroll', () => {
-if (window.scrollY > 50) {
-navbar.style.background = 'rgba(2, 6, 23, 0.85)';
-navbar.style.backdropFilter = 'blur(12px)';
-navbar.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
-} else {
-navbar.style.background = 'transparent';
-navbar.style.backdropFilter = 'none';
-navbar.style.borderBottom = 'none';
-}
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) current = section.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+    });
+    // Navbar background
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 4px 30px rgba(0,0,0,0.3)';
+    } else {
+        navbar.style.boxShadow = 'none';
+    }
 });
 
-// Mobile menu
-const mobileToggle = document.getElementById('mobile-toggle');
-const mobileClose = document.getElementById('mobile-close');
-const mobileMenu = document.getElementById('mobile-menu');
-const mobileOverlay = document.getElementById('mobile-overlay');
-const mobileLinks = document.querySelectorAll('.mobile-link');
+// Mobile Menu
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const closeMenuBtn = document.getElementById('closeMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileLinks = mobileMenu.querySelectorAll('a');
 
-function openMobileMenu() {
-mobileMenu.classList.add('open');
-mobileOverlay.classList.remove('hidden');
-document.body.style.overflow = 'hidden';
-}
-function closeMobileMenu() {
-mobileMenu.classList.remove('open');
-mobileOverlay.classList.add('hidden');
-document.body.style.overflow = '';
-}
-
-mobileToggle.addEventListener('click', openMobileMenu);
-mobileClose.addEventListener('click', closeMobileMenu);
-mobileOverlay.addEventListener('click', closeMobileMenu);
-mobileLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
-
-// Counter animation
-const counters = document.querySelectorAll('.counter');
-const counterObserver = new IntersectionObserver((entries) => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-const counter = entry.target;
-const target = parseInt(counter.dataset.target);
-if (target) {
-let current = 0;
-const increment = target / 60;
-const updateCounter = () => {
-current += increment;
-if (current < target) {
-counter.textContent = Math.ceil(current) + '+';
-requestAnimationFrame(updateCounter);
-} else {
-counter.textContent = target + '+';
-}
-};
-updateCounter();
-}
-counterObserver.unobserve(counter);
-}
-});
-}, { threshold: 0.5 });
-
-counters.forEach(counter => counterObserver.observe(counter));
+mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+closeMenuBtn.addEventListener('click', () => mobileMenu.classList.remove('open'));
+mobileLinks.forEach(link => link.addEventListener('click', () => mobileMenu.classList.remove('open')));
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function(e) {
-e.preventDefault();
-const target = document.querySelector(this.getAttribute('href'));
-if (target) {
-target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
 });
-});
-
-// Copy email function
-function copyEmail() {
-const email = 'muhammadmueenpk@gmail.com';
-navigator.clipboard.writeText(email).then(() => {
-const toast = document.getElementById('copy-toast');
-toast.classList.add('show');
-setTimeout(() => {
-toast.classList.remove('show');
-}, 3000);
-}).catch(err => {
-// Fallback for older browsers
-const textArea = document.createElement('textarea');
-textArea.value = email;
-document.body.appendChild(textArea);
-textArea.select();
-document.execCommand('copy');
-document.body.removeChild(textArea);
-const toast = document.getElementById('copy-toast');
-toast.classList.add('show');
-setTimeout(() => {
-toast.classList.remove('show');
-}, 3000);
-});
-}
 </script>
-
 </body>
 </html>
